@@ -1,0 +1,330 @@
+# Day 03 {.unnumbered}
+
+```{r}
+#| include: false
+library(tidyverse)
+library(gt)
+```
+
+Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.github.io/intro-stat-ds/2-viz.html) and focuses on making scatterplots with `ggplot()`.
+
+## Agenda
+
+::: agenda
+\~ 15 min <span class="tab"> Slide deck
+
+\~ 25 min <span class="tab"> Students work on Activity 02
+
+\~ 10 min <span class="tab"> Work through a select problem in detail from the activity as a class
+:::
+
+## Slide Deck
+
+
+::: slide-deck
+### Today's goals
+
+<br/>
+
+::: columns
+::: {.column width="60%"}
+1.  Create a scatterplot
+2.  Properly describe a scatterplot
+3.  Change aesthetics such as color and shape in your plot
+4.  Solve overplotting issues
+:::
+
+::: {.column width="40%"}
+
+::: {style="opacity:0.75}
+![](images/images_horst/ggplot2_exploratory.png){height="1in"} <br>
+<small> Artwork by \@allison_horst </small>
+:::
+
+:::
+:::
+:::
+
+::: slide-deck
+### The Grammar of Graphics {.smaller}
+
+
+
+::: columns
+::: {.column width="85%"}
+Defines a set of rules for constructing statistical graphics by combining different types of **layers**.
+:::
+
+::: {.column width="15%"}
+![](images/images_lecture/grammar_graphics.png){#id .class width="100px" height="100px"}
+:::
+
+:::
+
+```{r}
+#| echo: false
+grammar <- tibble(Layer = c("Data", "Aesthetics", "Geometries", "Facets", "Statistics", "Coordinates", "Theme"),
+                  Function =c("ggplot( )", "aes( )", "geom_*( )", "facet_*( )", "stat_*( )", "coord_*( )", "theme( )"), Explanation = c("initialize plot and define dataset first", "how variables are mapped", "how data is conveyed", "separates plots by categories", "statistical transformations", "customize coord system", "customize non-data components"))
+
+grammar %>% 
+  gt::gt() %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(rows = Layer %in% c("Data", "Aesthetics", "Geometries")
+  ) )%>%
+  tab_style(
+    style = cell_text(color = "blue"),
+    locations = cells_body(
+      columns = "Function",
+      rows = Layer %in% c("Data", "Aesthetics", "Geometries")
+  ) ) %>%
+  tab_style(
+    style = cell_text(color = "gray40"),
+    locations = cells_body(rows = !Layer %in% c("Data", "Aesthetics", "Geometries")
+  ) )  %>%
+  tab_style(
+    style = "padding-left:40px;padding-right:40px;",
+    locations = cells_body()
+  ) %>% 
+  tab_options(
+    table.font.size = 12,
+    column_labels.background.color = "lightgray",
+    column_labels.font.weight = "bold"
+  )
+```
+
+Only the *first three* layers are essential components that must be defined when building a graphic.
+:::
+
+::: slide-deck
+### 5NG#1: Scatterplots
+
+Scatterplots allow you to visualize the **relationship** between 2 **numerical** variables.
+
+**Scatterplot syntax in R:**
+
+```{r scatterplot}
+#| echo: true
+#| eval: false
+ggplot(data= my_data, mapping = aes(x = var1, y = var2)) +
+  geom_point()
+
+```
+
+
+**Scatterplot language:** Construct a scatterplot of **Y by X**.
+:::
+
+::: slide-deck
+### 5NG#1: Scatterplots
+
+When describing scatterplots...
+
+-   Look for pattern going from left to right.
+-   Classify association as positive, negative, or no association.
+-   Classify strength of association: strong, moderate, weak.
+-   Describe overall pattern: linear, nonlinear, etc.
+-   Check for overplotting issues.
+
+:::
+
+::: slide-deck
+### The Palmer Penguins Dataset:
+
+```{r}
+library(palmerpenguins)
+glimpse(penguins)
+```
+
+::: {layout-ncol=2}
+![](images/images_horst/palmer_penguin_species.png){ width="200px" height="150px"}
+
+![](images/images_horst/palmer_penguin.png){width="200px" height="150px"}
+
+:::
+<small> Artwork by \@allison_horst </small>
+:::
+
+
+::: activity
+
+:::columns
+::: {.column width="90%"}
+How would you describe the scatterplot?
+:::
+::: {.column width="10%"}
+![](images/images_lecture/participate_icon.png){ height="0.5in"}
+:::
+:::
+
+- Positive "moderately linear".
+- Teaching tip: draw an oval around the points. The thinner the oval the stronger the relationship. An approximate circle means no relationship.
+- Emphasize using the "buzz words" from the previous slide.
+- Some students may have noticed what appears to be three clusters! We will look at clusters in the next example.
+:::
+
+::: slide-deck
+### Example 1: Describing scatterplots
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| echo: true
+#| fig-cap: "Fig A"
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +
+  geom_point()
+```
+
+### Data
+
+```{r}
+glimpse(penguins)
+```
+:::
+
+:::
+
+::: slide-deck
+### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
+
+::: {.absolute top="0%" left="80%" width="200"}
+![](images/images_lecture/participate_icon.png)
+:::
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| out.width: 700px
+#| out.height: 450px
+#| fig-cap: "Fig B"
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
+  geom_point()
+```
+
+
+### Data
+
+```{r}
+glimpse(penguins)
+```
+:::
+
+:::
+
+::: slide-deck
+### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| out.width: 700px
+#| out.height: 450px
+#| fig-cap: "Fig C"
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +
+  geom_point()
+```
+
+
+### Data
+
+```{r}
+glimpse(penguins)
+```
+:::
+
+:::
+
+::: slide-deck
+### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
+
+::: panel-tabset
+### Plot
+```{r}
+#| out.width: 700px
+#| out.height: 450px
+#| fig-cap: "Fig D"
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +
+  geom_point()
+```
+
+
+### Data
+
+```{r}
+glimpse(penguins)
+```
+:::
+
+:::
+
+::: slide-deck
+### Common Coding Errors {.scrollable}
+
+1.  
+
+```{r}
+#| eval: false
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
+  geom_point() +
+```
+
+::: fragment
+![](images/images_lecture/error_2a.png){width="900px" height="100px"}
+:::
+
+::: fragment
+Plus sign to nowhere. What would happen if you type "1+2+" into a calculator? An error!
+:::
+
+2.  
+
+```{r}
+#| eval: false
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +
+  geom_point()
+```
+
+::: fragment
+![](images/images_lecture/error_2b.png){width="900px" height="100px"}
+:::
+
+::: fragment
+All parenthesis must me closed!
+:::
+
+3.  
+
+```{r}
+#| eval: false
+ggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +
+  geom_point()
+```
+
+::: fragment
+![](images/images_lecture/error_2c.png){width="900px" height="100px"}
+:::
+
+::: fragment
+R is case sensitive! Make sure the data and variable names match EXACTLY.
+:::
+
+:::
+
+::: slide-deck
+### Extra information and resources {.scrollable}
+
+<br>
+
+-   [ggplot2 cheatsheet link](https://www.rstudio.com/resources/cheatsheets/)
+
+-   Numerical vs Categorical data examples:
+
+![](images/images_lecture/data_types.png){.class width="500px" height="300px"}
+
+:::
+
+
+## Activity Solution

@@ -1,0 +1,267 @@
+# Day 02 {.unnumbered}
+
+Today's lesson covers [Preface and Chapter 1](https://nustat.github.io/intro-stat-ds/) and focuses on students getting familiar with Quarto in RStudio.
+
+## Agenda
+
+::: agenda
+\~ 25 min <span class="tab"> Students work in groups or independently on Activity 01.
+
+\~ 20 min <span class="tab"> Thoroughly walk through and discuss Activity 01 as a class.
+
+\~   5 min <span class="tab"> Make sure students know how to submit their activity! <br>    <span class="tab2"> Go through Slide Deck 01.
+:::
+
+## Activity Solution
+
+::: task
+Task 2
+:::
+
+::: activity
+title: "R Markdown Practice" <br>
+subtitle: "Activity 01" <br>
+author: "Willie Wildcat" <br>
+date: "2022-09-23" <br>
+format: html
+:::
+
+### Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+
+::: task
+Task 6 <br>
+message: false is 'Challenge'
+:::
+::: activity
+### Loading Package
+
+```{r}
+#| label: load-pkgs
+#| message: false
+library(nycflights13)
+library(dplyr)
+library(knitr)
+```
+:::
+
+### Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+### Tasks
+
+Complete the following series of tasks. Remember to **render early and render often**.
+
+#### Task 1
+
+It will be easier for you to compare your qmd file to the html file if we make a slight change to the RStudio settings.
+
+-   Find the gear/sprocket icon next to the **Render** button.
+-   Click it and then select **Preview in Viewer Pane**.
+-   Render the document to see the change.
+
+Now take some time to compare what you see in this document with the html version that is now previewed in the viewer pane.
+
+#### Task 2
+
+Let's make some adjustments to the document:
+
+1.  Change the title to "R Markdown Practice".
+2.  Add an "Activity 01" as a subtitle. Hint `subtitle:` goes right below `title:`.
+3.  Change the author to your name.
+4.  Change the date to today's date in "YYYY-MM-DD" format. Example 9/1/2030 becomes 2030-09-01.
+
+#### Task 3
+
+Insert an R code chunk BELOW and name it `task3`. Place the following two lines of code in it:
+
+::: task
+Task 3
+:::
+::: activity
+```{r}
+#| label: task3
+x <- 9
+y <- 45
+```
+:::
+
+The `<-` is an assignment operator. Here it assigned the number 9 to `x` and the number 45 to y. You store values so that you can access them by name later!
+
+#### Task 4
+
+Change the R code chunk options below to `eval=true` or alternatively you can simply remove `#| eval=false` from the code chunk options. Either will have the same effect. This depends on completing **Task 3** correctly.
+
+::: task
+eval: false -> eval: true
+:::
+```{r}
+#| label: task 4
+#| eval: true
+x * y
+```
+
+#### Task 5
+
+Let's focus on R code chunks. You may have noticed a down arrow and a green arrow on the upper right side of the code chunk.
+
+Click the green arrow on the `task4` R code chunk.
+
+An error MIGHT pop up right below the R chunk (if you did not get an error that is OKAY - you are one step ahead of us).
+
+Before we address the potential error let's change an RStudio setting. Again, find the gear/sprocket next to the **Knit** button. Click it and select **Chunk Output in Console**. A pop-up should appear, select remove output. Now click the green arrow on the `task4` R code chunk. Any ouput or message should now appear in the console below.
+
+Now let's take care of the error. Note that the error doesn't appear when you knit the document. All the code works fine. Test this out if you haven't already. This seems a little strange?
+
+It comes down to what happens when you click **Render**. A brand new session of R is started in the background (you don't see this), it produces the document, and then closes down.
+
+When we click the green arrow on the `task4` R code chunk we are not knitting. We are running code in our *current* R session. If you never ran the `task3` code chunk in our *current* R session the required variables do not exist yet and cannot be used. So we just need to run the `task3` code chunk before running the `task4` chunk.
+
+Stop for a second and imagine if the `task4` chunk depended on several code chunks. We can run all previous code chunks by clicking the icon with a down arrow and a green bar --- do this for the `task4` R code chunk. If you check your environment pane (top-right), then you will see the needed pieces have been created. Now click the green arrow on the `task4` chunk and it should return `405` in the console.
+
+#### Task 6
+
+Place a new section right before the **Running Code** with the header **Loading Packages**. Create an R code chunk named `load-pkgs` in the section and use it to load `nycflights13`, `dplyr` and `knitr`.
+
+Now alter the R code chunk below to get it to evaluate/run.
+
+::: task
+eval: false -> eval: true
+:::
+```{r}
+#| label: kable-test
+#| eval: true
+#| message: false
+
+airlines
+kable(airlines)
+```
+
+#### Optional challenge (don't have to complete)
+
+Alter the R code chunk options for `load-pkgs` to suppress the `message`s from appearing.
+
+#### Task 7
+
+Export your completed document and submit the activity on Canvas.
+
+1.  Be sure you **always render the final document before** you export.
+2.  It will create a document in the `Files` pane called `Last_First_act_01.html`. Check/click the box next to this file.
+3.  In the `Files` pane navigate to the gear sprocket. And click the `Export...` option.
+4.  Once your .html is downloaded. Look at it BEFORE submitting! Make sure everything is completed.
+5.  In Canvas click on the Assignment `Activity 01` and upload the html you downloaded.
+
+## Slide Deck
+
+Today's slide deck is more of a resource for student's to refer back to rather than an actual lecture.
+
+::: slide-deck
+### Today's goals 
+
+<br/>
+
+::: columns
+::: {.column width="60%"}
+1.  Change the `yaml` heading on a document
+2.  Create your first code chunk!
+3.  Learn the code chunk settings
+4.  Assign values to a variable
+:::
+
+::: {.column width="40%"}
+
+::: {style="opacity:0.75}
+![](images/images_horst/horst_rstudio_air.png){height="1in"} <br>
+<small> Artwork by \@allison_horst </small>
+:::
+
+:::
+:::
+
+:::
+
+
+::: slide-deck
+### Agenda
+
+- Complete today's activity first!
+
+- These slides just include helpful reminders that you may find useful to refer back to when working on later activities.
+
+:::
+
+::: slide-deck
+### RStudio interface
+
+
+::: {style="text-align: center"}
+![](images/images_guide/rstudio_interface_complete.png)
+:::
+
+:::
+
+
+::: slide-deck
+### Useful Buttons
+
+::: {layout="[50,50]"}
+![Change view output settings](images/images_lecture/rstudio_viewer.png)
+
+![Export html to submit](images/images_lecture/rstudio_export.png)
+:::
+
+:::
+
+
+::: slide-deck
+### Useful code chunk settings {.scrollable}
+
+::: columns
+::: {.column width="32%"}
+``` {{r}}
+#| message: false
+#| warning: false
+#| eval: false
+#| echo: false
+#| include: false
+```
+:::
+
+::: {.column width="68%"}
+-   `message: false` prevents messages from appearing in knitted doc
+-   `warning: false` prevents warnings from appearing in knitted doc
+-   `eval: false` includes the code chunk in the knitted document but prevents the code chunk from being run
+:::
+:::
+
+-   `echo: false` prevents code itself from printing but includes the results of the code
+-   `include: false` prevents code and its results from printing but still runs the code when knitted
+
+:::
+
+
+## Homework
+
+::: agenda
+- Complete and submit Activity 01
+
+- Read Sections 2.0 - 2.3 of the book
+
+- Complete and submit Reading Check 02_ggplot1
+:::

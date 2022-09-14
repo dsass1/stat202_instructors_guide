@@ -1,0 +1,41 @@
+
+
+/*-- scss:rules --*/
+
+.tab {
+  padding-left: 1em;
+}
+
+.tab2 {
+  padding-left: 4em;
+}
+
+.agenda {
+  padding: 1em 1em 1em 1em;
+  background: #E4E0EE center/3em no-repeat;
+  border: 2px solid #4E2A84;
+  border-radius: 12px;
+}
+
+.task {
+  padding-right: 1em;
+  text-align: right;
+  color: #FF0000;
+}
+
+
+.activity {
+  padding: 1em 1em 1em 1em;
+  border: 2px solid #FF0000;
+  border-radius: 12px;
+}
+
+
+.slide-deck {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #4E2A84;
+  background: #ffffff 5px center/3em no-repeat;
+}

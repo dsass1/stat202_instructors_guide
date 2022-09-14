@@ -1,0 +1,35 @@
+# Tentative schedule {.unnumbered}
+
+## 11 week Schedule
+
+|        | Topic                | Textbook              | Agenda       |
+|--------|----------------------|-----------------------|--------------|
+| Day 1  | Syllabus Day         |                       | Syllabus Day |
+| Day 2  | Intro to R           | Preface and Chapter 1 | Activity 01  |
+| Day 3  | Data Visualization   | Sections 2.0-2.3      | Activity 02  |
+| Day 4  | Data Visualization   | Sections 2.2-2.4      | Activity 03  |
+| Day 5  | Data Visualization   | Sections 2.5-2.7      | Activity 04  |
+| Day 6  | Data Wrangling       | Sections 3.0-3.2      | Activity 05  |
+| Day 7  | Data Wrangling       | Sections 3.3-3.7      | Activity 06  |
+| Day 8  | Tidy Data            | Chapter 4             | Activity 07  |
+| Day 9  | Exam 1               |                       |              |
+| Day 10 | Regression           | Sections 5.0-5.1      | Activity 08  |
+| Day 11 | Regression           | Sections 5.2-5.4      | Activity 09  |
+| Day 12 | Regression           | Sections 6.0-6.1      | Activity 10  |
+| Day 13 | Regression           | Sections 6.2-6.4      | Activity 02  |
+| Day 14 |                      | Chapter 7             | Activity 02  |
+| Day 15 |                      | Chapter 8             | Activity 02  |
+| Day 16 | Exam 2               |                       |              |
+| Day 17 | Sampling Theory      | Sections 9.0-9.1      | Activity 02  |
+| Day 18 | Sampling Theory      | Sections 9.2-9.4      | Activity 02  |
+| Day 19 | Sampling Theory      | Sections 2.0-2.1      | Activity 02  |
+| Day 20 | Confidence Intervals | Sections 2.0-2.1      | Activity 02  |
+| Day 21 | Confidence Intervals | Sections 2.0-2.1      | Activity 02  |
+| Day 22 | P-values             | Sections 2.0-2.1      | Activity 02  |
+| Day 23 | Hypothesis Testing   | Sections 2.0-2.1      | Activity 02  |
+| Day 24 | Hypothesis Testing   | Sections 2.0-2.1      | Activity 02  |
+| Day 25 | Hypothesis Testing   | Sections 2.0-2.1      | Activity 02  |
+| Day 26 | Review               | Sections 2.0-2.1      | Activity 02  |
+| Day 27 | Exam 3               |                       |              |
+
+## 15 week Schedule

@@ -3,20 +3,27 @@ project:
   output-dir: docs
 
 book:
-  title: "Introduction to Spatial Analysis with R"
+  title: "Introduction to Statistics and Data Science: Instructor's Guide"
   author: "Danielle Sass"
-  date: "8/31/2022"
+  date: "9/08/2022"
   chapters:
     - index.qmd
-    - 01-intro.qmd
-    - 02-data.qmd
+    - 00-syllabi.qmd
+    - 00-schedule.qmd
+    - 01-content.qmd
+    - 02-content.qmd
+    - 03-content.qmd
     - references.qmd
+  
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, style.scss]
+    number-depth: 1
+    toc-depth: 2
+    echo: fenced
   pdf:
     documentclass: scrreprt
 
