@@ -185,22 +185,45 @@ glimpse(penguins)
 
 :::
 
+
+::: activity
+
+:::columns
+::: {.column width="90%"}
+How would you describe the scatterplot?
+:::
+::: {.column width="10%"}
+![](images/images_lecture/participate_icon.png){ height="0.5in"}
+:::
+:::
+
+- Overall negative "weakly linear".
+- Teaching tip: draw an oval around the points.
+:::
+
+::: activity
+But the clusters don't appear to be negative... what variable might be causing these two separate clusters?
+
+- Since there are two your first instinct is probably the variable `sex`
+:::
+
 ::: slide-deck
 ### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
-
-::: {.absolute top="0%" left="80%" width="200"}
-![](images/images_lecture/participate_icon.png)
-:::
 
 ::: panel-tabset
 ### Plot
 
 ```{r}
-#| out.width: 700px
-#| out.height: 450px
-#| fig-cap: "Fig B"
+#| eval: false
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
   geom_point()
+```
+```{r}
+#| echo: false
+#| fig-cap: "Fig B"
+ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
+  geom_point() +
+  stat_ellipse(color = "red")
 ```
 
 
@@ -213,6 +236,10 @@ glimpse(penguins)
 
 :::
 
+
+::: activity
+But `sex` is not the cause of the clusters. Try another categorical variable that might cause different flipper and bill length.
+:::
 ::: slide-deck
 ### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
 
@@ -220,8 +247,6 @@ glimpse(penguins)
 ### Plot
 
 ```{r}
-#| out.width: 700px
-#| out.height: 450px
 #| fig-cap: "Fig C"
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +
   geom_point()
@@ -237,14 +262,18 @@ glimpse(penguins)
 
 :::
 
+
+::: activity
+Now describe the scatterplot:
+Weakly positive linear for Adelie and Chinstrap species. These two species appear to be similar with the center of the grouping having a flipper length around 190 mm and bill depth around 18.5mm. Gentoo also has a positive linear relationship, perhaps more moderate than weak. Gentoo have a longer flipper but shorter bill depth than the other 2 species.
+:::
+
 ::: slide-deck
 ### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
 
 ::: panel-tabset
 ### Plot
 ```{r}
-#| out.width: 700px
-#| out.height: 450px
 #| fig-cap: "Fig D"
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +
   geom_point()
@@ -272,7 +301,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
 ```
 
 ::: fragment
-![](images/images_lecture/error_2a.png){width="900px" height="100px"}
+![](images/images_lecture/error_2a.png){width="400px" height="75px"}
 :::
 
 ::: fragment
@@ -288,7 +317,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +
 ```
 
 ::: fragment
-![](images/images_lecture/error_2b.png){width="900px" height="100px"}
+![](images/images_lecture/error_2b.png){width="400px" height="75px"}
 :::
 
 ::: fragment
@@ -304,7 +333,7 @@ ggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +
 ```
 
 ::: fragment
-![](images/images_lecture/error_2c.png){width="900px" height="100px"}
+![](images/images_lecture/error_2c.png){width="400px" height="75px"}
 :::
 
 ::: fragment

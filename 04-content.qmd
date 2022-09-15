@@ -1,0 +1,27 @@
+# Day 04 {.unnumbered}
+
+```{r}
+#| include: false
+library(tidyverse)
+library(gt)
+```
+
+Today's lesson covers [Section 2.4 - 2.6](https://nustat.github.io/intro-stat-ds/2-viz.html#linegraphs) and focuses on making linegraphs and histograms with `ggplot()`.
+
+## Agenda
+
+::: agenda
+\~ 15 min <span class="tab"> Slide deck
+
+\~ 25 min <span class="tab"> Students work on Activity 02
+
+\~ 10 min <span class="tab"> Work through a select problem in detail from the activity as a class
+:::
+
+## Slide Deck
+
+::: slide-deck
+
+:::
+
+## Activity Solution

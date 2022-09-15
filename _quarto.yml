@@ -13,6 +13,7 @@ book:
     - 01-content.qmd
     - 02-content.qmd
     - 03-content.qmd
+    - 04-content.qmd
     - references.qmd
   
 
@@ -26,6 +27,9 @@ format:
     echo: fenced
   pdf:
     documentclass: scrreprt
+    number-depth: 1
+    toc-depth: 2
+    echo: fenced
 
 editor: visual
 

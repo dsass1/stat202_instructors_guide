@@ -1,89 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Statistics and Data Science: Instructor’s Guide",
-    "section": "",
-    "text": "This book is meant to be a resource for instructors to provide a complete guide for teaching Introduction to Statistics and Data Science."
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "01-intro.html",
-    "href": "01-intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "02-data.html",
-    "href": "02-data.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "00-syllabi.html",
-    "href": "00-syllabi.html",
-    "title": "Sample syllabus",
-    "section": "",
-    "text": "Day\nTime\nLocation\n\n\n\n\nLectures\nMWF\n9:00 am - 9:50 am\nRoom ???\n\n\n\nPrerequisite: High School Algebra"
-  },
-  {
-    "objectID": "01-content.html",
-    "href": "01-content.html",
-    "title": "Day 01",
-    "section": "",
-    "text": "Welcome to class! Today is all about getting setup with the needed resources and reviewing the syllabus."
-  },
-  {
-    "objectID": "02-content.html#learning-goals",
-    "href": "02-content.html#learning-goals",
-    "title": "3  Day 02",
-    "section": "Learning Goals",
-    "text": "Learning Goals"
-  },
-  {
-    "objectID": "02-content.html#agenda",
-    "href": "02-content.html#agenda",
-    "title": "Day 02",
-    "section": "Agenda",
-    "text": "Agenda\n\n~ 25 min  Students work in groups or independently on Activity 01.\n~ 20 min  Thoroughly walk through and discuss Activity 01 as a class.\n~   5 min  Make sure students know how to submit their activity!      Go through Slide Deck 01."
-  },
-  {
-    "objectID": "02-content.html#slides",
-    "href": "02-content.html#slides",
-    "title": "3  Day 02",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "02-content.html#activity",
-    "href": "02-content.html#activity",
-    "title": "3  Day 02",
-    "section": "Activity",
-    "text": "Activity\n\nTask 2\n\n\ntitle: “R Markdown Practice”  subtitle: “Activity 01”  author: “Willie Wildcat”  date: “2022-09-23”  format: html\n\n\nQuarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\nTask 6\n\n\n\nLoading Package\n\nlibrary(nycflights13)\nlibrary(dplyr)\nlibrary(knitr)\n\n\n\nRunning Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\n\nTasks\nComplete the following series of tasks. Remember to render early and render often.\n\nTask 1\nIt will be easier for you to compare your qmd file to the html file if we make a slight change to the RStudio settings.\n\nFind the gear/sprocket icon next to the Render button.\nClick it and then select Preview in Viewer Pane.\nRender the document to see the change.\n\nNow take some time to compare what you see in this document with the html version that is now previewed in the viewer pane.\n\n\nTask 2\nLet’s make some adjustments to the document:\n\nChange the title to “R Markdown Practice”.\nAdd an “Activity 01” as a subtitle. Hint subtitle: goes right below title:.\nChange the author to your name.\nChange the date to today’s date in “YYYY-MM-DD” format. Example 9/1/2030 becomes 2030-09-01.\n\n\n\nTask 3\nInsert an R code chunk BELOW and name it task3. Place the following two lines of code in it:\n\nTask 3\n\n\n\nx <- 9\ny <- 45\n\n\nThe <- is an assignment operator. Here it assigned the number 9 to x and the number 45 to y. You store values so that you can access them by name later!\n\n\nTask 4\nChange the R code chunk options below to eval=true or alternatively you can simply remove #| eval=false from the code chunk options. Either will have the same effect. This depends on completing Task 3 correctly.\n\n# was eval: false\nx * y\n\n[1] 405\n\n\n\n\nTask 5\nLet’s focus on R code chunks. You may have noticed a down arrow and a green arrow on the upper right side of the code chunk.\nClick the green arrow on the task4 R code chunk.\nAn error MIGHT pop up right below the R chunk (if you did not get an error that is OKAY - you are one step ahead of us).\nBefore we address the potential error let’s change an RStudio setting. Again, find the gear/sprocket next to the Knit button. Click it and select Chunk Output in Console. A pop-up should appear, select remove output. Now click the green arrow on the task4 R code chunk. Any ouput or message should now appear in the console below.\nNow let’s take care of the error. Note that the error doesn’t appear when you knit the document. All the code works fine. Test this out if you haven’t already. This seems a little strange?\nIt comes down to what happens when you click Render. A brand new session of R is started in the background (you don’t see this), it produces the document, and then closes down.\nWhen we click the green arrow on the task4 R code chunk we are not knitting. We are running code in our current R session. If you never ran the task3 code chunk in our current R session the required variables do not exist yet and cannot be used. So we just need to run the task3 code chunk before running the task4 chunk.\nStop for a second and imagine if the task4 chunk depended on several code chunks. We can run all previous code chunks by clicking the icon with a down arrow and a green bar — do this for the task4 R code chunk. If you check your environment pane (top-right), then you will see the needed pieces have been created. Now click the green arrow on the task4 chunk and it should return 405 in the console.\n\n\nTask 6\nPlace a new section right before the Running Code with the header Loading Packages. Create an R code chunk named load-pkgs in the section and use it to load nycflights13, dplyr and knitr.\nNow alter the R code chunk below to get it to evaluate/run.\n\n# was eval: false\n#| message: false\n\nairlines\n\n# A tibble: 16 x 2\n   carrier name                       \n   <chr>   <chr>                      \n 1 9E      Endeavor Air Inc.          \n 2 AA      American Airlines Inc.     \n 3 AS      Alaska Airlines Inc.       \n 4 B6      JetBlue Airways            \n 5 DL      Delta Air Lines Inc.       \n 6 EV      ExpressJet Airlines Inc.   \n 7 F9      Frontier Airlines Inc.     \n 8 FL      AirTran Airways Corporation\n 9 HA      Hawaiian Airlines Inc.     \n10 MQ      Envoy Air                  \n11 OO      SkyWest Airlines Inc.      \n12 UA      United Air Lines Inc.      \n13 US      US Airways Inc.            \n14 VX      Virgin America             \n15 WN      Southwest Airlines Co.     \n16 YV      Mesa Airlines Inc.         \n\nkable(airlines)\n\n\n\n\ncarrier\nname\n\n\n\n\n9E\nEndeavor Air Inc.\n\n\nAA\nAmerican Airlines Inc.\n\n\nAS\nAlaska Airlines Inc.\n\n\nB6\nJetBlue Airways\n\n\nDL\nDelta Air Lines Inc.\n\n\nEV\nExpressJet Airlines Inc.\n\n\nF9\nFrontier Airlines Inc.\n\n\nFL\nAirTran Airways Corporation\n\n\nHA\nHawaiian Airlines Inc.\n\n\nMQ\nEnvoy Air\n\n\nOO\nSkyWest Airlines Inc.\n\n\nUA\nUnited Air Lines Inc.\n\n\nUS\nUS Airways Inc.\n\n\nVX\nVirgin America\n\n\nWN\nSouthwest Airlines Co.\n\n\nYV\nMesa Airlines Inc.\n\n\n\n\n\n\n\nOptional challenge (don’t have to complete)\nAlter the R code chunk options for load-pkgs to suppress the messages from appearing.\n\n\nTask 7\nExport your completed document and submit the activity on Canvas.\n\nBe sure you always render the final document before you export.\nIt will create a document in the Files pane called Last_First_act_01.html. Check/click the box next to this file.\nIn the Files pane navigate to the gear sprocket. And click the Export... option.\nOnce your .html is downloaded. Look at it BEFORE submitting! Make sure everything is completed.\nIn Canvas click on the Assignment Activity 01 and upload the html you downloaded."
-  },
-  {
     "objectID": "03-content.html",
     "href": "03-content.html",
     "title": "Day 03",
@@ -91,95 +7,32 @@
     "text": "Onto the real fun now! Today’s lesson covers Section 2.0 - 2.3 and focuses on making scatterplots with ggplot()."
   },
   {
-    "objectID": "01-content.html#agenda",
-    "href": "01-content.html#agenda",
-    "title": "Day 01",
+    "objectID": "03-content.html#agenda",
+    "href": "03-content.html#agenda",
+    "title": "Day 03",
     "section": "Agenda",
-    "text": "Agenda\n\n~ 15 min  Syllabus and expectations.\n~ 20 min  Welcome and get students setup with all of the needed resources.\n~ 15 min  Students take survey and get to know their neighbors."
+    "text": "Agenda\n\n~ 15 min  Slide deck\n~ 25 min  Students work on Activity 02\n~ 10 min  Work through a select problem in detail from the activity as a class"
   },
   {
-    "objectID": "02-content.html",
-    "href": "02-content.html",
-    "title": "Day 02",
-    "section": "",
-    "text": "Today’s lesson covers Preface and Chapter 1 and focuses on students getting familiar with Quarto in RStudio."
-  },
-  {
-    "objectID": "02-content.html#slide-deck",
-    "href": "02-content.html#slide-deck",
-    "title": "Day 02",
+    "objectID": "03-content.html#slide-deck",
+    "href": "03-content.html#slide-deck",
+    "title": "Day 03",
     "section": "Slide Deck",
-    "text": "Slide Deck\nToday’s slide deck is more of a resource for student’s to refer back to rather than an actual lecture.\n\nToday’s goals\n\n\n\n\nChange the yaml heading on a document\nCreate your first code chunk!\nLearn the code chunk settings\nAssign values to a variable\n\n\n\n   Artwork by @allison_horst \n\n\n\n\n\nAgenda\n\nComplete today’s activity first!\nThese slides just include helpful reminders that you may find useful to refer back to when working on later activities.\n\n\n\nRStudio interface\n\n\n\n\n\nUseful Buttons\n\n\n\n\n\n\nChange view output settings\n\n\n\n\n\n\n\nExport html to submit\n\n\n\n\n\n\n\nUseful code chunk settings\n\n\n```{r}\n#| message: false\n#| warning: false\n#| eval: false\n#| echo: false\n#| include: false\n```\n\n\nmessage: false prevents messages from appearing in knitted doc\nwarning: false prevents warnings from appearing in knitted doc\neval: false includes the code chunk in the knitted document but prevents the code chunk from being run\n\n\n\n\necho: false prevents code itself from printing but includes the results of the code\ninclude: false prevents code and its results from printing but still runs the code when knitted"
+    "text": "Slide Deck\n\nToday’s goals\n\n\n\n\nCreate a scatterplot\nProperly describe a scatterplot\nChange aesthetics such as color and shape in your plot\nSolve overplotting issues\n\n\n\n   Artwork by @allison_horst \n\n\n\n\n\nThe Grammar of Graphics\n\n\nDefines a set of rules for constructing statistical graphics by combining different types of layers.\n\n\n\n\n\n\n\n\n\n\n  \n  \n    \n      Layer\n      Function\n      Explanation\n    \n  \n  \n    Data\nggplot( )\ninitialize plot and define dataset first\n    Aesthetics\naes( )\nhow variables are mapped\n    Geometries\ngeom_*( )\nhow data is conveyed\n    Facets\nfacet_*( )\nseparates plots by categories\n    Statistics\nstat_*( )\nstatistical transformations\n    Coordinates\ncoord_*( )\ncustomize coord system\n    Theme\ntheme( )\ncustomize non-data components\n  \n  \n  \n\n\n\n\nOnly the first three layers are essential components that must be defined when building a graphic.\n\n\n5NG#1: Scatterplots\nScatterplots allow you to visualize the relationship between 2 numerical variables.\nScatterplot syntax in R:\n\nggplot(data= my_data, mapping = aes(x = var1, y = var2)) +\n  geom_point()\n\nScatterplot language: Construct a scatterplot of Y by X.\n\n\n5NG#1: Scatterplots\nWhen describing scatterplots…\n\nLook for pattern going from left to right.\nClassify association as positive, negative, or no association.\nClassify strength of association: strong, moderate, weak.\nDescribe overall pattern: linear, nonlinear, etc.\nCheck for overplotting issues.\n\n\n\nThe Palmer Penguins Dataset:\n\n```{r}\n\nlibrary(palmerpenguins)\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\n\n\n\n\n\n Artwork by @allison_horst \n\n\n\n\nHow would you describe the scatterplot?\n\n\n\n\n\nPositive “moderately linear”.\nTeaching tip: draw an oval around the points. The thinner the oval the stronger the relationship. An approximate circle means no relationship.\nEmphasize using the “buzz words” from the previous slide.\nSome students may have noticed what appears to be three clusters! We will look at clusters in the next example.\n\n\n\nExample 1: Describing scatterplots\n\nPlotData\n\n\n\nggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +\n  geom_point()\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig A\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\n\n\nHow would you describe the scatterplot?\n\n\n\n\n\nOverall negative “weakly linear”.\nTeaching tip: draw an oval around the points.\n\n\n\nBut the clusters don’t appear to be negative… what variable might be causing these two separate clusters?\n\nSince there are two your first instinct is probably the variable sex\n\n\n\nExample 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point()\n```\n\n\n\nWarning: Removed 2 rows containing non-finite values (stat_ellipse).\n\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig B\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nBut sex is not the cause of the clusters. Try another categorical variable that might cause different flipper and bill length.\n\n\nExample 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| fig-cap: \"Fig C\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig C\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nNow describe the scatterplot: Weakly positive linear for Adelie and Chinstrap species. These two species appear to be similar with the center of the grouping having a flipper length around 190 mm and bill depth around 18.5mm. Gentoo also has a positive linear relationship, perhaps more moderate than weak. Gentoo have a longer flipper but shorter bill depth than the other 2 species.\n\n\nExample 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| fig-cap: \"Fig D\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig D\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nCommon Coding Errors\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point() +\n```\n\n\n\n\n\nPlus sign to nowhere. What would happen if you type “1+2+” into a calculator? An error!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nAll parenthesis must me closed!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nR is case sensitive! Make sure the data and variable names match EXACTLY.\n\n\n\nExtra information and resources\n\n\nggplot2 cheatsheet link\nNumerical vs Categorical data examples:"
   },
   {
-    "objectID": "02-content.html#quarto",
-    "href": "02-content.html#quarto",
-    "title": "R Markdown Practice",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "02-content.html#loading-package",
-    "href": "02-content.html#loading-package",
-    "title": "R Markdown Practice",
-    "section": "Loading Package",
-    "text": "Loading Package\n\nlibrary(nycflights13)\nlibrary(dplyr)\nlibrary(knitr)"
-  },
-  {
-    "objectID": "02-content.html#running-code",
-    "href": "02-content.html#running-code",
-    "title": "R Markdown Practice",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "02-content.html#tasks",
-    "href": "02-content.html#tasks",
-    "title": "R Markdown Practice",
-    "section": "Tasks",
-    "text": "Tasks\nComplete the following series of tasks. Remember to render early and render often.\n\nTask 1\nIt will be easier for you to compare your qmd file to the html file if we make a slight change to the RStudio settings.\n\nFind the gear/sprocket icon next to the Render button.\nClick it and then select Preview in Viewer Pane.\nRender the document to see the change.\n\nNow take some time to compare what you see in this document with the html version that is now previewed in the viewer pane.\n\n\nTask 2\nLet’s make some adjustments to the document:\n\nChange the title to “R Markdown Practice”.\nAdd an “Activity 01” as a subtitle. Hint subtitle: goes right below title:.\nChange the author to your name.\nChange the date to today’s date in “YYYY-MM-DD” format. Example 9/1/2030 becomes 2030-09-01.\n\n\n\nTask 3\nInsert an R code chunk BELOW and name it task3. Place the following two lines of code in it:\n\nx <- 9\ny <- 45\n\nThe <- is an assignment operator. Here it assigned the number 9 to x and the number 45 to y. You store values so that you can access them by name later!\n\n\nTask 4\nChange the R code chunk options below to eval=true or alternatively you can simply remove #| eval=false from the code chunk options. Either will have the same effect. This depends on completing Task 3 correctly.\n\nx * y\n\n[1] 405\n\n\n\n\nTask 5\nLet’s focus on R code chunks. You may have noticed a down arrow and a green arrow on the upper right side of the code chunk.\nClick the green arrow on the task4 R code chunk.\nAn error MIGHT pop up right below the R chunk (if you did not get an error that is OKAY - you are one step ahead of us).\nBefore we address the potential error let’s change an RStudio setting. Again, find the gear/sprocket next to the Knit button. Click it and select Chunk Output in Console. A pop-up should appear, select remove output. Now click the green arrow on the task4 R code chunk. Any ouput or message should now appear in the console below.\nNow let’s take care of the error. Note that the error doesn’t appear when you knit the document. All the code works fine. Test this out if you haven’t already. This seems a little strange?\nIt comes down to what happens when you click Render. A brand new session of R is started in the background (you don’t see this), it produces the document, and then closes down.\nWhen we click the green arrow on the task4 R code chunk we are not knitting. We are running code in our current R session. If you never ran the task3 code chunk in our current R session the required variables do not exist yet and cannot be used. So we just need to run the task3 code chunk before running the task4 chunk.\nStop for a second and imagine if the task4 chunk depended on several code chunks. We can run all previous code chunks by clicking the icon with a down arrow and a green bar — do this for the task4 R code chunk. If you check your environment pane (top-right), then you will see the needed pieces have been created. Now click the green arrow on the task4 chunk and it should return 405 in the console.\n\n\nTask 6\nPlace a new section right before the Running Code with the header Loading Packages. Create an R code chunk named load-pkgs in the section and use it to load nycflights13, dplyr and knitr.\nNow alter the R code chunk below to get it to evaluate/run.\n\nairlines\nkable(airlines)\n\n\n\nOptional challenge (don’t have to complete)\nAlter the R code chunk options for load-pkgs to suppress the messages from appearing.\n\n\nTask 7\nExport your completed document and submit the activity on Canvas.\n\nBe sure you always render the final document before you export.\nIt will create a document in the Files pane called Last_First_act_01.html. Check/click the box next to this file.\nIn the Files pane navigate to the gear sprocket. And click the Export... option.\nOnce your .html is downloaded. Look at it BEFORE submitting! Make sure everything is completed.\nIn Canvas click on the Assignment Activity 01 and upload the html you downloaded."
-  },
-  {
-    "objectID": "02-content.html#activity-solution",
-    "href": "02-content.html#activity-solution",
-    "title": "Day 02",
+    "objectID": "03-content.html#activity-solution",
+    "href": "03-content.html#activity-solution",
+    "title": "Day 03",
     "section": "Activity Solution",
-    "text": "Activity Solution\n\nTask 2\n\n\ntitle: “R Markdown Practice”  subtitle: “Activity 01”  author: “Willie Wildcat”  date: “2022-09-23”  format: html\n\n\nQuarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\nTask 6  message: false is ‘Challenge’\n\n\n\nLoading Package\n\n```{r}\n#| label: load-pkgs\n#| message: false\nlibrary(nycflights13)\nlibrary(dplyr)\nlibrary(knitr)\n```\n\n\n\nRunning Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n```{r}\n\n1 + 1\n```\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\n\nTasks\nComplete the following series of tasks. Remember to render early and render often.\n\nTask 1\nIt will be easier for you to compare your qmd file to the html file if we make a slight change to the RStudio settings.\n\nFind the gear/sprocket icon next to the Render button.\nClick it and then select Preview in Viewer Pane.\nRender the document to see the change.\n\nNow take some time to compare what you see in this document with the html version that is now previewed in the viewer pane.\n\n\nTask 2\nLet’s make some adjustments to the document:\n\nChange the title to “R Markdown Practice”.\nAdd an “Activity 01” as a subtitle. Hint subtitle: goes right below title:.\nChange the author to your name.\nChange the date to today’s date in “YYYY-MM-DD” format. Example 9/1/2030 becomes 2030-09-01.\n\n\n\nTask 3\nInsert an R code chunk BELOW and name it task3. Place the following two lines of code in it:\n\nTask 3\n\n\n\n```{r}\n#| label: task3\nx <- 9\ny <- 45\n```\n\n\nThe <- is an assignment operator. Here it assigned the number 9 to x and the number 45 to y. You store values so that you can access them by name later!\n\n\nTask 4\nChange the R code chunk options below to eval=true or alternatively you can simply remove #| eval=false from the code chunk options. Either will have the same effect. This depends on completing Task 3 correctly.\n\neval: false -> eval: true\n\n\n```{r}\n#| label: task 4\n#| eval: true\nx * y\n```\n\n[1] 405\n\n\n\n\nTask 5\nLet’s focus on R code chunks. You may have noticed a down arrow and a green arrow on the upper right side of the code chunk.\nClick the green arrow on the task4 R code chunk.\nAn error MIGHT pop up right below the R chunk (if you did not get an error that is OKAY - you are one step ahead of us).\nBefore we address the potential error let’s change an RStudio setting. Again, find the gear/sprocket next to the Knit button. Click it and select Chunk Output in Console. A pop-up should appear, select remove output. Now click the green arrow on the task4 R code chunk. Any ouput or message should now appear in the console below.\nNow let’s take care of the error. Note that the error doesn’t appear when you knit the document. All the code works fine. Test this out if you haven’t already. This seems a little strange?\nIt comes down to what happens when you click Render. A brand new session of R is started in the background (you don’t see this), it produces the document, and then closes down.\nWhen we click the green arrow on the task4 R code chunk we are not knitting. We are running code in our current R session. If you never ran the task3 code chunk in our current R session the required variables do not exist yet and cannot be used. So we just need to run the task3 code chunk before running the task4 chunk.\nStop for a second and imagine if the task4 chunk depended on several code chunks. We can run all previous code chunks by clicking the icon with a down arrow and a green bar — do this for the task4 R code chunk. If you check your environment pane (top-right), then you will see the needed pieces have been created. Now click the green arrow on the task4 chunk and it should return 405 in the console.\n\n\nTask 6\nPlace a new section right before the Running Code with the header Loading Packages. Create an R code chunk named load-pkgs in the section and use it to load nycflights13, dplyr and knitr.\nNow alter the R code chunk below to get it to evaluate/run.\n\neval: false -> eval: true\n\n\n```{r}\n#| label: kable-test\n#| eval: true\n#| message: false\n\nairlines\nkable(airlines)\n```\n\n# A tibble: 16 x 2\n   carrier name                       \n   <chr>   <chr>                      \n 1 9E      Endeavor Air Inc.          \n 2 AA      American Airlines Inc.     \n 3 AS      Alaska Airlines Inc.       \n 4 B6      JetBlue Airways            \n 5 DL      Delta Air Lines Inc.       \n 6 EV      ExpressJet Airlines Inc.   \n 7 F9      Frontier Airlines Inc.     \n 8 FL      AirTran Airways Corporation\n 9 HA      Hawaiian Airlines Inc.     \n10 MQ      Envoy Air                  \n11 OO      SkyWest Airlines Inc.      \n12 UA      United Air Lines Inc.      \n13 US      US Airways Inc.            \n14 VX      Virgin America             \n15 WN      Southwest Airlines Co.     \n16 YV      Mesa Airlines Inc.         \n\n\n\n\n\ncarrier\nname\n\n\n\n\n9E\nEndeavor Air Inc.\n\n\nAA\nAmerican Airlines Inc.\n\n\nAS\nAlaska Airlines Inc.\n\n\nB6\nJetBlue Airways\n\n\nDL\nDelta Air Lines Inc.\n\n\nEV\nExpressJet Airlines Inc.\n\n\nF9\nFrontier Airlines Inc.\n\n\nFL\nAirTran Airways Corporation\n\n\nHA\nHawaiian Airlines Inc.\n\n\nMQ\nEnvoy Air\n\n\nOO\nSkyWest Airlines Inc.\n\n\nUA\nUnited Air Lines Inc.\n\n\nUS\nUS Airways Inc.\n\n\nVX\nVirgin America\n\n\nWN\nSouthwest Airlines Co.\n\n\nYV\nMesa Airlines Inc.\n\n\n\n\n\n\n\nOptional challenge (don’t have to complete)\nAlter the R code chunk options for load-pkgs to suppress the messages from appearing.\n\n\nTask 7\nExport your completed document and submit the activity on Canvas.\n\nBe sure you always render the final document before you export.\nIt will create a document in the Files pane called Last_First_act_01.html. Check/click the box next to this file.\nIn the Files pane navigate to the gear sprocket. And click the Export... option.\nOnce your .html is downloaded. Look at it BEFORE submitting! Make sure everything is completed.\nIn Canvas click on the Assignment Activity 01 and upload the html you downloaded."
+    "text": "Activity Solution"
   },
   {
-    "objectID": "02-content.html#agenda-1",
-    "href": "02-content.html#agenda-1",
-    "title": "4  Day 02",
-    "section": "Agenda",
-    "text": "Agenda\n\nComplete today’s activity first!\nThese slides just include helpful reminders that you may find useful to refer back to when working on later activities."
-  },
-  {
-    "objectID": "02-content.html#rstudio-interface",
-    "href": "02-content.html#rstudio-interface",
-    "title": "4  Day 02",
-    "section": "RStudio interface",
-    "text": "RStudio interface\n\n\n\n\n\n\n\n\ncode and text for report go here\n\n\n\n\n\n\nstored variables and data shows up here\n\n\n\n\n\n\nyour working directory project files are here\n\n\n\n\n\n\nCONSOLE PANE one time code that does not appear in document can go here"
-  },
-  {
-    "objectID": "02-content.html#useful-buttons",
-    "href": "02-content.html#useful-buttons",
-    "title": "4  Day 02",
-    "section": "Useful Buttons",
-    "text": "Useful Buttons\n\n\n\n\n\n\nChange view output settings\n\n\n\n\n\n\n\nExport html to submit"
-  },
-  {
-    "objectID": "02-content.html#useful-code-chunk-settings",
-    "href": "02-content.html#useful-code-chunk-settings",
-    "title": "4  Day 02",
-    "section": "Useful code chunk settings",
-    "text": "Useful code chunk settings\n\n\n```{r}\n#| message: false\n#| warning: false\n#| eval: false\n#| echo: false\n#| include: false\n```\n\n\nmessage: false prevents messages from appearing in knitted doc\nwarning: false prevents warnings from appearing in knitted doc\n\n\n\n\neval: false includes the code chunk in the knitted document but prevents the code chunk from being run\necho: false prevents code itself from printing but includes the results of the code\ninclude: false prevents code and its results from printing but still runs the code when knitted"
-  },
-  {
-    "objectID": "02-content.html#homework",
-    "href": "02-content.html#homework",
-    "title": "Day 02",
-    "section": "Homework",
-    "text": "Homework\n\n\nComplete and submit Activity 01\nRead Sections 2.0 - 2.3 of the book\nComplete and submit Reading Check 02_ggplot1"
+    "objectID": "00-syllabi.html",
+    "href": "00-syllabi.html",
+    "title": "Sample syllabus",
+    "section": "",
+    "text": "Day\nTime\nLocation\n\n\n\n\nLectures\nMWF\n9:00 am - 9:50 am\nRoom ???\n\n\n\nPrerequisite: High School Algebra"
   },
   {
     "objectID": "00-syllabi.html#instructional-team",
@@ -252,20 +105,6 @@
     "text": "Asking Questions & Course Communication\nThis term we will be using Campuswire (“Enrollment Code: XXXX”) as our preferred platform for questions about activities, reading checks, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructional team. Rather than emailing questions to the instructional team, you should post your questions on Campuswire.\nThe instructional team will check Campuswire periodically and answer questions, but we strongly encourage students to answer each other’s questions. To this end, student will be able to earn bonus points — see Canvas for details.\nPlease do not expect answers during weekends and evenings."
   },
   {
-    "objectID": "00-syllabi.html#week-schedule",
-    "href": "00-syllabi.html#week-schedule",
-    "title": "Sample syllabus and tentative schedule",
-    "section": "11 week Schedule",
-    "text": "11 week Schedule"
-  },
-  {
-    "objectID": "00-syllabi.html#week-schedule-1",
-    "href": "00-syllabi.html#week-schedule-1",
-    "title": "Sample syllabus and tentative schedule",
-    "section": "15 week Schedule",
-    "text": "15 week Schedule"
-  },
-  {
     "objectID": "00-syllabi.html#school-policies",
     "href": "00-syllabi.html#school-policies",
     "title": "Sample syllabus",
@@ -287,6 +126,20 @@
     "text": "15 week Schedule"
   },
   {
+    "objectID": "01-content.html",
+    "href": "01-content.html",
+    "title": "Day 01",
+    "section": "",
+    "text": "Welcome to class! Today is all about getting setup with the needed resources and reviewing the syllabus."
+  },
+  {
+    "objectID": "01-content.html#agenda",
+    "href": "01-content.html#agenda",
+    "title": "Day 01",
+    "section": "Agenda",
+    "text": "Agenda\n\n~ 15 min  Syllabus and expectations.\n~ 20 min  Welcome and get students setup with all of the needed resources.\n~ 15 min  Students take survey and get to know their neighbors."
+  },
+  {
     "objectID": "01-content.html#slide-deck",
     "href": "01-content.html#slide-deck",
     "title": "Day 01",
@@ -294,101 +147,66 @@
     "text": "Slide Deck\n\nTeaching note: I recommend using RStudio Cloud if possible for ease of getting started. Otherwise you will need to dedicate more time towards downloading R and RStudio. See the sample survey for some examples of questions to ask your students! We use these survey results on the exams.\n\n\nToday’s tasks\nMake sure you have completed the following agenda items by the end of class!\n\nReview the syllabus\nVisit the course’s Campuswire page using your @u.northwestern.edu email. Enrollment code: 7930\nGain access to the RStudio Cloud Class Workspace (link on Canvas)\nWe will be using AHA slides for participation this quarter.\nComplete the google survey - we will use this data later.\nTest out the homework system Reading Check 01 (RC 01).\nLogin/create your Northwestern Zoom Account if you do not have one. This will be used for office hours or requested appointments."
   },
   {
-    "objectID": "03-content.html#agenda",
-    "href": "03-content.html#agenda",
-    "title": "Day 03",
+    "objectID": "02-content.html",
+    "href": "02-content.html",
+    "title": "Day 02",
+    "section": "",
+    "text": "Today’s lesson covers Preface and Chapter 1 and focuses on students getting familiar with Quarto in RStudio."
+  },
+  {
+    "objectID": "02-content.html#agenda",
+    "href": "02-content.html#agenda",
+    "title": "Day 02",
+    "section": "Agenda",
+    "text": "Agenda\n\n~ 25 min  Students work in groups or independently on Activity 01.\n~ 20 min  Thoroughly walk through and discuss Activity 01 as a class.\n~   5 min  Make sure students know how to submit their activity!      Go through Slide Deck 01."
+  },
+  {
+    "objectID": "02-content.html#activity-solution",
+    "href": "02-content.html#activity-solution",
+    "title": "Day 02",
+    "section": "Activity Solution",
+    "text": "Activity Solution\n\nTask 2\n\n\ntitle: “R Markdown Practice”  subtitle: “Activity 01”  author: “Willie Wildcat”  date: “2022-09-23”  format: html\n\n\nQuarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\nTask 6  message: false is ‘Challenge’\n\n\n\nLoading Package\n\n```{r}\n#| label: load-pkgs\n#| message: false\nlibrary(nycflights13)\nlibrary(dplyr)\nlibrary(knitr)\n```\n\n\n\nRunning Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n```{r}\n\n1 + 1\n```\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\n\nTasks\nComplete the following series of tasks. Remember to render early and render often.\n\nTask 1\nIt will be easier for you to compare your qmd file to the html file if we make a slight change to the RStudio settings.\n\nFind the gear/sprocket icon next to the Render button.\nClick it and then select Preview in Viewer Pane.\nRender the document to see the change.\n\nNow take some time to compare what you see in this document with the html version that is now previewed in the viewer pane.\n\n\nTask 2\nLet’s make some adjustments to the document:\n\nChange the title to “R Markdown Practice”.\nAdd an “Activity 01” as a subtitle. Hint subtitle: goes right below title:.\nChange the author to your name.\nChange the date to today’s date in “YYYY-MM-DD” format. Example 9/1/2030 becomes 2030-09-01.\n\n\n\nTask 3\nInsert an R code chunk BELOW and name it task3. Place the following two lines of code in it:\n\nTask 3\n\n\n\n```{r}\n#| label: task3\nx <- 9\ny <- 45\n```\n\n\nThe <- is an assignment operator. Here it assigned the number 9 to x and the number 45 to y. You store values so that you can access them by name later!\n\n\nTask 4\nChange the R code chunk options below to eval=true or alternatively you can simply remove #| eval=false from the code chunk options. Either will have the same effect. This depends on completing Task 3 correctly.\n\neval: false -> eval: true\n\n\n```{r}\n#| label: task 4\n#| eval: true\nx * y\n```\n\n[1] 405\n\n\n\n\nTask 5\nLet’s focus on R code chunks. You may have noticed a down arrow and a green arrow on the upper right side of the code chunk.\nClick the green arrow on the task4 R code chunk.\nAn error MIGHT pop up right below the R chunk (if you did not get an error that is OKAY - you are one step ahead of us).\nBefore we address the potential error let’s change an RStudio setting. Again, find the gear/sprocket next to the Knit button. Click it and select Chunk Output in Console. A pop-up should appear, select remove output. Now click the green arrow on the task4 R code chunk. Any ouput or message should now appear in the console below.\nNow let’s take care of the error. Note that the error doesn’t appear when you knit the document. All the code works fine. Test this out if you haven’t already. This seems a little strange?\nIt comes down to what happens when you click Render. A brand new session of R is started in the background (you don’t see this), it produces the document, and then closes down.\nWhen we click the green arrow on the task4 R code chunk we are not knitting. We are running code in our current R session. If you never ran the task3 code chunk in our current R session the required variables do not exist yet and cannot be used. So we just need to run the task3 code chunk before running the task4 chunk.\nStop for a second and imagine if the task4 chunk depended on several code chunks. We can run all previous code chunks by clicking the icon with a down arrow and a green bar — do this for the task4 R code chunk. If you check your environment pane (top-right), then you will see the needed pieces have been created. Now click the green arrow on the task4 chunk and it should return 405 in the console.\n\n\nTask 6\nPlace a new section right before the Running Code with the header Loading Packages. Create an R code chunk named load-pkgs in the section and use it to load nycflights13, dplyr and knitr.\nNow alter the R code chunk below to get it to evaluate/run.\n\neval: false -> eval: true\n\n\n```{r}\n#| label: kable-test\n#| eval: true\n#| message: false\n\nairlines\nkable(airlines)\n```\n\n# A tibble: 16 x 2\n   carrier name                       \n   <chr>   <chr>                      \n 1 9E      Endeavor Air Inc.          \n 2 AA      American Airlines Inc.     \n 3 AS      Alaska Airlines Inc.       \n 4 B6      JetBlue Airways            \n 5 DL      Delta Air Lines Inc.       \n 6 EV      ExpressJet Airlines Inc.   \n 7 F9      Frontier Airlines Inc.     \n 8 FL      AirTran Airways Corporation\n 9 HA      Hawaiian Airlines Inc.     \n10 MQ      Envoy Air                  \n11 OO      SkyWest Airlines Inc.      \n12 UA      United Air Lines Inc.      \n13 US      US Airways Inc.            \n14 VX      Virgin America             \n15 WN      Southwest Airlines Co.     \n16 YV      Mesa Airlines Inc.         \n\n\n\n\n\ncarrier\nname\n\n\n\n\n9E\nEndeavor Air Inc.\n\n\nAA\nAmerican Airlines Inc.\n\n\nAS\nAlaska Airlines Inc.\n\n\nB6\nJetBlue Airways\n\n\nDL\nDelta Air Lines Inc.\n\n\nEV\nExpressJet Airlines Inc.\n\n\nF9\nFrontier Airlines Inc.\n\n\nFL\nAirTran Airways Corporation\n\n\nHA\nHawaiian Airlines Inc.\n\n\nMQ\nEnvoy Air\n\n\nOO\nSkyWest Airlines Inc.\n\n\nUA\nUnited Air Lines Inc.\n\n\nUS\nUS Airways Inc.\n\n\nVX\nVirgin America\n\n\nWN\nSouthwest Airlines Co.\n\n\nYV\nMesa Airlines Inc.\n\n\n\n\n\n\n\nOptional challenge (don’t have to complete)\nAlter the R code chunk options for load-pkgs to suppress the messages from appearing.\n\n\nTask 7\nExport your completed document and submit the activity on Canvas.\n\nBe sure you always render the final document before you export.\nIt will create a document in the Files pane called Last_First_act_01.html. Check/click the box next to this file.\nIn the Files pane navigate to the gear sprocket. And click the Export... option.\nOnce your .html is downloaded. Look at it BEFORE submitting! Make sure everything is completed.\nIn Canvas click on the Assignment Activity 01 and upload the html you downloaded."
+  },
+  {
+    "objectID": "02-content.html#slide-deck",
+    "href": "02-content.html#slide-deck",
+    "title": "Day 02",
+    "section": "Slide Deck",
+    "text": "Slide Deck\nToday’s slide deck is more of a resource for student’s to refer back to rather than an actual lecture.\n\nToday’s goals\n\n\n\n\nChange the yaml heading on a document\nCreate your first code chunk!\nLearn the code chunk settings\nAssign values to a variable\n\n\n\n   Artwork by @allison_horst \n\n\n\n\n\nAgenda\n\nComplete today’s activity first!\nThese slides just include helpful reminders that you may find useful to refer back to when working on later activities.\n\n\n\nRStudio interface\n\n\n\n\n\nUseful Buttons\n\n\n\n\n\n\nChange view output settings\n\n\n\n\n\n\n\nExport html to submit\n\n\n\n\n\n\n\nUseful code chunk settings\n\n\n```{r}\n#| message: false\n#| warning: false\n#| eval: false\n#| echo: false\n#| include: false\n```\n\n\nmessage: false prevents messages from appearing in knitted doc\nwarning: false prevents warnings from appearing in knitted doc\neval: false includes the code chunk in the knitted document but prevents the code chunk from being run\n\n\n\n\necho: false prevents code itself from printing but includes the results of the code\ninclude: false prevents code and its results from printing but still runs the code when knitted"
+  },
+  {
+    "objectID": "02-content.html#homework",
+    "href": "02-content.html#homework",
+    "title": "Day 02",
+    "section": "Homework",
+    "text": "Homework\n\n\nComplete and submit Activity 01\nRead Sections 2.0 - 2.3 of the book\nComplete and submit Reading Check 02_ggplot1"
+  },
+  {
+    "objectID": "04-content.html",
+    "href": "04-content.html",
+    "title": "Day 04",
+    "section": "",
+    "text": "Today’s lesson covers Section 2.4 - 2.6 and focuses on making linegraphs and histograms with ggplot()."
+  },
+  {
+    "objectID": "04-content.html#agenda",
+    "href": "04-content.html#agenda",
+    "title": "Day 04",
     "section": "Agenda",
     "text": "Agenda\n\n~ 15 min  Slide deck\n~ 25 min  Students work on Activity 02\n~ 10 min  Work through a select problem in detail from the activity as a class"
   },
   {
-    "objectID": "03-content.html#slide-deck",
-    "href": "03-content.html#slide-deck",
-    "title": "Day 03",
+    "objectID": "04-content.html#slide-deck",
+    "href": "04-content.html#slide-deck",
+    "title": "Day 04",
     "section": "Slide Deck",
-    "text": "Slide Deck\n\nToday’s goals\n\n\n\n\nCreate a scatterplot\nProperly describe a scatterplot\nChange aesthetics such as color and shape in your plot\nSolve overplotting issues\n\n\n\n   Artwork by @allison_horst \n\n\n\n\n\nThe Grammar of Graphics\n\n\nDefines a set of rules for constructing statistical graphics by combining different types of layers.\n\n\n\n\n\n\n\n\n\n\n  \n  \n    \n      Layer\n      Function\n      Explanation\n    \n  \n  \n    Data\nggplot( )\ninitialize plot and define dataset first\n    Aesthetics\naes( )\nhow variables are mapped\n    Geometries\ngeom_*( )\nhow data is conveyed\n    Facets\nfacet_*( )\nseparates plots by categories\n    Statistics\nstat_*( )\nstatistical transformations\n    Coordinates\ncoord_*( )\ncustomize coord system\n    Theme\ntheme( )\ncustomize non-data components\n  \n  \n  \n\n\n\n\nOnly the first three layers are essential components that must be defined when building a graphic.\n\n\n5NG#1: Scatterplots\nScatterplots allow you to visualize the relationship between 2 numerical variables.\nScatterplot syntax in R:\n\nggplot(data= my_data, mapping = aes(x = var1, y = var2)) +\n  geom_point()\n\nScatterplot language: Construct a scatterplot of Y by X.\n\n\n5NG#1: Scatterplots\nWhen describing scatterplots…\n\nLook for pattern going from left to right.\nClassify association as positive, negative, or no association.\nClassify strength of association: strong, moderate, weak.\nDescribe overall pattern: linear, nonlinear, etc.\nCheck for overplotting issues.\n\n\n\nThe Palmer Penguins Dataset:\n\n```{r}\n\nlibrary(palmerpenguins)\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\n\n\n\n\n\n Artwork by @allison_horst \n\n\n\n\nHow would you describe the scatterplot?\n\n\n\n\n\nPositive “moderately linear”.\nTeaching tip: draw an oval around the points. The thinner the oval the stronger the relationship. An approximate circle means no relationship.\nEmphasize using the “buzz words” from the previous slide.\nSome students may have noticed what appears to be three clusters! We will look at clusters in the next example.\n\n\n\nExample 1: Describing scatterplots\n\nPlotData\n\n\n\nggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +\n  geom_point()\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig A\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nExample 2: Describing scatterplots\n\n\n\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig B\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig B\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nExample 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig C\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig C\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nExample 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig D\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig D\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\nCommon Coding Errors\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point() +\n```\n\n\n\n\n\nPlus sign to nowhere. What would happen if you type “1+2+” into a calculator? An error!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nAll parenthesis must me closed!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nR is case sensitive! Make sure the data and variable names match EXACTLY.\n\n\n\nExtra information and resources\n\n\nggplot2 cheatsheet link\nNumerical vs Categorical data examples:"
+    "text": "Slide Deck"
   },
   {
-    "objectID": "03-content.html#activity-solution",
-    "href": "03-content.html#activity-solution",
-    "title": "Day 03",
+    "objectID": "04-content.html#activity-solution",
+    "href": "04-content.html#activity-solution",
+    "title": "Day 04",
     "section": "Activity Solution",
     "text": "Activity Solution"
-  },
-  {
-    "objectID": "03-content.html#todays-goals",
-    "href": "03-content.html#todays-goals",
-    "title": "1  Day 03",
-    "section": "Today’s goals",
-    "text": "Today’s goals\n\n\n\n\nCreate a scatterplot\nProperly describe a scatterplot\nChange aesthetics such as color and shape in your plot\nSolve overplotting issues\n\n\n\n\n\n   Artwork by @allison_horst"
-  },
-  {
-    "objectID": "03-content.html#the-grammar-of-graphics",
-    "href": "03-content.html#the-grammar-of-graphics",
-    "title": "1  Day 03",
-    "section": "The Grammar of Graphics",
-    "text": "The Grammar of Graphics\n\n\n\n\n\nDefines a set of rules for constructing statistical graphics by combining different types of layers.\n\n\n\n\n\n\n  \n  \n    \n      Layer\n      Function\n      Explanation\n    \n  \n  \n    Data\nggplot( )\ninitialize plot and define dataset first\n    Aesthetics\naes( )\nhow variables are mapped\n    Geometries\ngeom_*( )\nhow data is conveyed\n    Facets\nfacet_*( )\nseparates plots by categories\n    Statistics\nstat_*( )\nstatistical transformations\n    Coordinates\ncoord_*( )\ncustomize coord system\n    Theme\ntheme( )\ncustomize non-data components\n  \n  \n  \n\n\n\n\n\n\n\nOnly the first three layers are essential components that must be defined when building a graphic."
-  },
-  {
-    "objectID": "03-content.html#ng1-scatterplots",
-    "href": "03-content.html#ng1-scatterplots",
-    "title": "1  Day 03",
-    "section": "5NG#1: Scatterplots",
-    "text": "5NG#1: Scatterplots\n\nScatterplots allow you to visualize the relationship between 2 numerical variables.\n\n\nScatterplot syntax in R:\n\nggplot(data= my_data, mapping = aes(x = var1, y = var2)) +\n  geom_point()\n\n\n\n\nScatterplot language: Construct a scatterplot of Y by X."
-  },
-  {
-    "objectID": "03-content.html#ng1-scatterplots-1",
-    "href": "03-content.html#ng1-scatterplots-1",
-    "title": "1  Day 03",
-    "section": "5NG#1: Scatterplots",
-    "text": "5NG#1: Scatterplots\nWhen describing scatterplots…\n\n\nLook for pattern going from left to right.\nClassify association as positive, negative, or no association.\nClassify strength of association: strong, moderate, weak.\nDescribe overall pattern: linear, nonlinear, etc.\nCheck for overplotting issues."
-  },
-  {
-    "objectID": "03-content.html#the-palmer-penguins-dataset",
-    "href": "03-content.html#the-palmer-penguins-dataset",
-    "title": "1  Day 03",
-    "section": "The Palmer Penguins Dataset:",
-    "text": "The Palmer Penguins Dataset:\n\n```{r}\n\nlibrary(palmerpenguins)\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~\n\n\n\n\n\n\n\n\n\n\nArtwork by (allison_horst?)"
-  },
-  {
-    "objectID": "03-content.html#example-1-describing-scatterplots",
-    "href": "03-content.html#example-1-describing-scatterplots",
-    "title": "1  Day 03",
-    "section": "Example 1: Describing scatterplots",
-    "text": "Example 1: Describing scatterplots\n\n\n\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig A\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig A\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~"
-  },
-  {
-    "objectID": "03-content.html#example-2-describing-scatterplots",
-    "href": "03-content.html#example-2-describing-scatterplots",
-    "title": "1  Day 03",
-    "section": "Example 2: Describing scatterplots",
-    "text": "Example 2: Describing scatterplots\n\n\n\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig B\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig B\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~"
-  },
-  {
-    "objectID": "03-content.html#example-2-describing-scatterplots-1",
-    "href": "03-content.html#example-2-describing-scatterplots-1",
-    "title": "1  Day 03",
-    "section": "Example 2: Describing scatterplots",
-    "text": "Example 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig C\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig C\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~"
-  },
-  {
-    "objectID": "03-content.html#example-2-describing-scatterplots-2",
-    "href": "03-content.html#example-2-describing-scatterplots-2",
-    "title": "1  Day 03",
-    "section": "Example 2: Describing scatterplots",
-    "text": "Example 2: Describing scatterplots\n\nPlotData\n\n\n\n```{r}\n#| out.width: 700px\n#| out.height: 450px\n#| fig-cap: \"Fig D\"\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +\n  geom_point()\n```\n\nWarning: Removed 2 rows containing missing values (geom_point).\n\n\n\n\n\nFig D\n\n\n\n\n\n\n\n```{r}\n\nglimpse(penguins)\n```\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~\n$ sex               <fct> male, female, female, NA, female, male, female, male~\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~"
-  },
-  {
-    "objectID": "03-content.html#common-coding-errors",
-    "href": "03-content.html#common-coding-errors",
-    "title": "1  Day 03",
-    "section": "Common Coding Errors",
-    "text": "Common Coding Errors\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +\n  geom_point() +\n```\n\n\n\n\n\nPlus sign to nowhere. What would happen if you type “1+2+” into a calculator? An error!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nAll parenthesis must me closed!\n\n\n\n\n\n```{r}\n#| eval: false\nggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +\n  geom_point()\n```\n\n\n\n\n\nR is case sensitive! Make sure the data and variable names match EXACTLY."
-  },
-  {
-    "objectID": "03-content.html#extra-information-and-resources",
-    "href": "03-content.html#extra-information-and-resources",
-    "title": "1  Day 03",
-    "section": "Extra information and resources",
-    "text": "Extra information and resources\n\n\nggplot2 cheatsheet link\nNumerical vs Categorical data examples:"
   }
 ]
