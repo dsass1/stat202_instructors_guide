@@ -227,9 +227,9 @@ Which bin is best?
 
 Describe the districution.
 
-- bimodal and right skewed
-- center of peaks around 190 and 215 
-- spread in terms of range is \~170 to 230 
+-   bimodal and right skewed
+-   center of peaks around 190 and 215
+-   spread in terms of range is \~170 to 230
 :::
 
 ::: {.column width="10%"}
@@ -299,17 +299,15 @@ ggplot(penguins, aes(x=flipper_length_mm)) +
     facet_wrap(~ species)
 ```
 
-![](images/images_lecture/fig_03facet.png){#id .class width="800px" height="600px"}
 :::
-
 
 ::: activity
 ::: columns
 ::: {.column width="90%"}
 Which is correct?
 
-- b and d
-- aes() is for variables! Since "white" is not a variable it does not go in the aes().
+-   b and d
+-   aes() is for variables! Since "white" is not a variable it does not go in the aes().
 :::
 
 ::: {.column width="10%"}
@@ -373,3 +371,15 @@ Helpful guidelines:
 :::
 
 ## Activity Solution
+
+Need to add. See RStudio Cloud TA Solutions for now.
+
+## Homework
+
+::: agenda
+-   Complete and submit Activity 03
+
+-   Read Sections 2.7 - 2.9 of the book
+
+-   Complete and submit Reading Check 04_ggplot3
+:::

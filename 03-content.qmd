@@ -20,7 +20,6 @@ Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.
 
 ## Slide Deck
 
-
 ::: slide-deck
 ### Today's goals
 
@@ -35,20 +34,15 @@ Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.
 :::
 
 ::: {.column width="40%"}
-
 ::: {style="opacity:0.75}
-![](images/images_horst/ggplot2_exploratory.png){height="1in"} <br>
-<small> Artwork by \@allison_horst </small>
+![](images/images_horst/ggplot2_exploratory.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
-
 :::
 :::
 :::
 
 ::: slide-deck
 ### The Grammar of Graphics {.smaller}
-
-
 
 ::: columns
 ::: {.column width="85%"}
@@ -58,7 +52,6 @@ Defines a set of rules for constructing statistical graphics by combining differ
 ::: {.column width="15%"}
 ![](images/images_lecture/grammar_graphics.png){#id .class width="100px" height="100px"}
 :::
-
 :::
 
 ```{r}
@@ -111,7 +104,6 @@ ggplot(data= my_data, mapping = aes(x = var1, y = var2)) +
 
 ```
 
-
 **Scatterplot language:** Construct a scatterplot of **Y by X**.
 :::
 
@@ -125,7 +117,6 @@ When describing scatterplots...
 -   Classify strength of association: strong, moderate, weak.
 -   Describe overall pattern: linear, nonlinear, etc.
 -   Check for overplotting issues.
-
 :::
 
 ::: slide-deck
@@ -136,31 +127,30 @@ library(palmerpenguins)
 glimpse(penguins)
 ```
 
-::: {layout-ncol=2}
-![](images/images_horst/palmer_penguin_species.png){ width="200px" height="150px"}
+::: {layout-ncol="2"}
+![](images/images_horst/palmer_penguin_species.png){width="200px" height="150px"}
 
 ![](images/images_horst/palmer_penguin.png){width="200px" height="150px"}
-
 :::
+
 <small> Artwork by \@allison_horst </small>
 :::
 
-
 ::: activity
-
-:::columns
+::: columns
 ::: {.column width="90%"}
 How would you describe the scatterplot?
 :::
+
 ::: {.column width="10%"}
-![](images/images_lecture/participate_icon.png){ height="0.5in"}
+![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
 
-- Positive "moderately linear".
-- Teaching tip: draw an oval around the points. The thinner the oval the stronger the relationship. An approximate circle means no relationship.
-- Emphasize using the "buzz words" from the previous slide.
-- Some students may have noticed what appears to be three clusters! We will look at clusters in the next example.
+-   Positive "moderately linear".
+-   Teaching tip: draw an oval around the points. The thinner the oval the stronger the relationship. An approximate circle means no relationship.
+-   Emphasize using the "buzz words" from the previous slide.
+-   Some students may have noticed what appears to be three clusters! We will look at clusters in the next example.
 :::
 
 ::: slide-deck
@@ -182,29 +172,27 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +
 glimpse(penguins)
 ```
 :::
-
 :::
 
-
 ::: activity
-
-:::columns
+::: columns
 ::: {.column width="90%"}
 How would you describe the scatterplot?
 :::
+
 ::: {.column width="10%"}
-![](images/images_lecture/participate_icon.png){ height="0.5in"}
+![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
 
-- Overall negative "weakly linear".
-- Teaching tip: draw an oval around the points.
+-   Overall negative "weakly linear".
+-   Teaching tip: draw an oval around the points.
 :::
 
 ::: activity
 But the clusters don't appear to be negative... what variable might be causing these two separate clusters?
 
-- Since there are two your first instinct is probably the variable `sex`
+-   Since there are two your first instinct is probably the variable `sex`
 :::
 
 ::: slide-deck
@@ -218,6 +206,7 @@ But the clusters don't appear to be negative... what variable might be causing t
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
   geom_point()
 ```
+
 ```{r}
 #| echo: false
 #| fig-cap: "Fig B"
@@ -226,20 +215,18 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
   stat_ellipse(color = "red")
 ```
 
-
 ### Data
 
 ```{r}
 glimpse(penguins)
 ```
 :::
-
 :::
-
 
 ::: activity
 But `sex` is not the cause of the clusters. Try another categorical variable that might cause different flipper and bill length.
 :::
+
 ::: slide-deck
 ### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
 
@@ -252,20 +239,16 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +
   geom_point()
 ```
 
-
 ### Data
 
 ```{r}
 glimpse(penguins)
 ```
 :::
-
 :::
 
-
 ::: activity
-Now describe the scatterplot:
-Weakly positive linear for Adelie and Chinstrap species. These two species appear to be similar with the center of the grouping having a flipper length around 190 mm and bill depth around 18.5mm. Gentoo also has a positive linear relationship, perhaps more moderate than weak. Gentoo have a longer flipper but shorter bill depth than the other 2 species.
+Now describe the scatterplot: Weakly positive linear for Adelie and Chinstrap species. These two species appear to be similar with the center of the grouping having a flipper length around 190 mm and bill depth around 18.5mm. Gentoo also has a positive linear relationship, perhaps more moderate than weak. Gentoo have a longer flipper but shorter bill depth than the other 2 species.
 :::
 
 ::: slide-deck
@@ -273,12 +256,12 @@ Weakly positive linear for Adelie and Chinstrap species. These two species appea
 
 ::: panel-tabset
 ### Plot
+
 ```{r}
 #| fig-cap: "Fig D"
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +
   geom_point()
 ```
-
 
 ### Data
 
@@ -286,7 +269,6 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +
 glimpse(penguins)
 ```
 :::
-
 :::
 
 ::: slide-deck
@@ -339,7 +321,6 @@ ggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +
 ::: fragment
 R is case sensitive! Make sure the data and variable names match EXACTLY.
 :::
-
 :::
 
 ::: slide-deck
@@ -352,8 +333,18 @@ R is case sensitive! Make sure the data and variable names match EXACTLY.
 -   Numerical vs Categorical data examples:
 
 ![](images/images_lecture/data_types.png){.class width="500px" height="300px"}
-
 :::
 
-
 ## Activity Solution
+
+Need to add. See RStudio Cloud TA Solutions for now.
+
+## Homework
+
+::: agenda
+-   Complete and submit Activity 02
+
+-   Read Sections 2.4 - 2.6 of the book
+
+-   Complete and submit Reading Check 03_ggplot2
+:::

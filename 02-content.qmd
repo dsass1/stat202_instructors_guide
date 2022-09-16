@@ -19,22 +19,17 @@ Task 2
 :::
 
 ::: activity
-title: "R Markdown Practice" <br>
-subtitle: "Activity 01" <br>
-author: "Willie Wildcat" <br>
-date: "2022-09-23" <br>
-format: html
+title: "R Markdown Practice" <br> subtitle: "Activity 01" <br> author: "Willie Wildcat" <br> date: "2022-09-23" <br> format: html
 :::
 
 ### Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-
 ::: task
-Task 6 <br>
-message: false is 'Challenge'
+Task 6 <br> message: false is 'Challenge'
 :::
+
 ::: activity
 ### Loading Package
 
@@ -94,6 +89,7 @@ Insert an R code chunk BELOW and name it `task3`. Place the following two lines 
 ::: task
 Task 3
 :::
+
 ::: activity
 ```{r}
 #| label: task3
@@ -109,8 +105,9 @@ The `<-` is an assignment operator. Here it assigned the number 9 to `x` and the
 Change the R code chunk options below to `eval=true` or alternatively you can simply remove `#| eval=false` from the code chunk options. Either will have the same effect. This depends on completing **Task 3** correctly.
 
 ::: task
-eval: false -> eval: true
+eval: false -\> eval: true
 :::
+
 ```{r}
 #| label: task 4
 #| eval: true
@@ -142,8 +139,9 @@ Place a new section right before the **Running Code** with the header **Loading 
 Now alter the R code chunk below to get it to evaluate/run.
 
 ::: task
-eval: false -> eval: true
+eval: false -\> eval: true
 :::
+
 ```{r}
 #| label: kable-test
 #| eval: true
@@ -172,7 +170,7 @@ Export your completed document and submit the activity on Canvas.
 Today's slide deck is more of a resource for student's to refer back to rather than an actual lecture.
 
 ::: slide-deck
-### Today's goals 
+### Today's goals
 
 <br/>
 
@@ -185,37 +183,28 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 :::
 
 ::: {.column width="40%"}
-
 ::: {style="opacity:0.75}
-![](images/images_horst/horst_rstudio_air.png){height="1in"} <br>
-<small> Artwork by \@allison_horst </small>
-:::
-
+![](images/images_horst/horst_rstudio_air.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
 :::
-
 :::
-
+:::
 
 ::: slide-deck
 ### Agenda
 
-- Complete today's activity first!
+-   Complete today's activity first!
 
-- These slides just include helpful reminders that you may find useful to refer back to when working on later activities.
-
+-   These slides just include helpful reminders that you may find useful to refer back to when working on later activities.
 :::
 
 ::: slide-deck
 ### RStudio interface
 
-
 ::: {style="text-align: center"}
 ![](images/images_guide/rstudio_interface_complete.png)
 :::
-
 :::
-
 
 ::: slide-deck
 ### Useful Buttons
@@ -225,9 +214,7 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 ![Export html to submit](images/images_lecture/rstudio_export.png)
 :::
-
 :::
-
 
 ::: slide-deck
 ### Useful code chunk settings {.scrollable}
@@ -252,16 +239,14 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 -   `echo: false` prevents code itself from printing but includes the results of the code
 -   `include: false` prevents code and its results from printing but still runs the code when knitted
-
 :::
-
 
 ## Homework
 
 ::: agenda
-- Complete and submit Activity 01
+-   Complete and submit Activity 01
 
-- Read Sections 2.0 - 2.3 of the book
+-   Read Sections 2.0 - 2.3 of the book
 
-- Complete and submit Reading Check 02_ggplot1
+-   Complete and submit Reading Check 02_ggplot1
 :::
