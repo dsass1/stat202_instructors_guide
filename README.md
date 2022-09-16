@@ -1,7 +1,7 @@
-# intro_spatial
+# Instructor's Guide: STAT 202
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of intro_spatial is to ...
+The goal of ...
