@@ -9,9 +9,9 @@ library(palmerpenguins)
 
 Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-ds/2-viz.html#boxplots) and focuses on making boxplots and barplots with `ggplot()`.
 
+::: {.callout-note icon="false"}
 ## Agenda
 
-::: agenda
 \~ 15 min <span class="tab"> Slide deck
 
 \~ 25 min <span class="tab"> Students work on Activity 02
@@ -21,8 +21,7 @@ Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-ds
 
 ## Slide Deck
 
-::: slide-deck
-
+::: {.callout-note appearance="simple" icon="false"}
 ### Today's goals
 
 <br/>
@@ -35,17 +34,13 @@ Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-ds
 4.  Display barplots in various ways by category
 :::
 
-
 ::: {.column width="40%"}
-::: {style="opacity:0.75}
 ![](images/images_horst/r_first_then.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
 :::
-
-:::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### 5NG#4: Boxplots
 
 -   A boxplot is used to visualize the **distribution** of a single **numerical** variable.
@@ -64,14 +59,12 @@ ggplot(data= my_data, aes(x = (optional categorical variable),  y = var1)) +
 If you switch x and y, it will just change the orientation of the boxplot (personal preference).
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### 5NG#4: Boxplots
 
 ::: columns
 ::: {.column width="40%"}
-<center>
-![](images/images_lecture/box_plot.png){height="2in"}
-</center>
+<center>![](images/images_lecture/box_plot.png){height="2in"}</center>
 :::
 
 ::: {.column width="60%"}
@@ -84,13 +77,12 @@ There are 3 things that we typically focus on and describe/compare when inspecti
 :::
 :::
 
-
-::: activity
+::: {.callout-important appearance="minimal"}
 ::: columns
 ::: {.column width="90%"}
 Is `Survived` a categorical or numerical variable?
 
-- It should be categorical even though it is coded as numerical "dbl"
+-   It should be categorical even though it is coded as numerical "dbl"
 :::
 
 ::: {.column width="10%"}
@@ -99,7 +91,7 @@ Is `Survived` a categorical or numerical variable?
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### Binary Variables {.scrollable}
 
 Consider the `titanic` dataset, which contains information about passengers on the titanic. If a passenger survived, then the variable `Survived = 1`.
@@ -110,9 +102,7 @@ titanic %>%
   glimpse()
 ```
 
-
 Is `Survived` a categorical or numerical variable?
-
 
 `R` will read in numerical columns as "numbers" even though these numbers are supposed to represent "categories".
 
@@ -121,16 +111,14 @@ To fix this we need to use the `factor()` function.
 Typing `factor(Survived)` would turn the variable into a "factor".
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### 5NG#5: Barplots
 
 A barplot is used to visualize the distribution (frequencies) of a single categorical variable.
 
 -   `geom_bar()` is used when we have the raw data and counting how many observations are in each category has to be done (list not yet counted).
 
-
 -   `geom_col()` is used when we directly have counts of each category in our dataset (pre-counted).
-
 
 **Barplot syntax in R:**
 
@@ -142,7 +130,7 @@ ggplot(data= my_data, aes(x = var1)) +
 ```
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### 5NG#5: Barplots continued
 
 When describing a barplot we look for...
@@ -153,13 +141,12 @@ When describing a barplot we look for...
 -   If all the bars are about equal height, then the distribution is uniform.
 :::
 
-
-::: activity
+::: {.callout-important appearance="minimal"}
 ::: columns
 ::: {.column width="90%"}
 Are we using `geom_bar()` or `geom_col()`?
 
-- `geom_bar()`
+-   `geom_bar()`
 :::
 
 ::: {.column width="10%"}
@@ -167,7 +154,8 @@ Are we using `geom_bar()` or `geom_col()`?
 :::
 :::
 :::
-::: slide-deck
+
+::: {.callout-note appearance="simple" icon="false"}
 ### Example 1: Barplots {.scrollable .smaller}
 
 Consider the Palmer Penguins dataset.
@@ -207,15 +195,15 @@ penguins_counted <- penguins %>%
 :::
 :::
 
-::: activity
-Teaching note:
+::: {.callout-important icon="false"}
+## Teaching note:
 
-- stacked: best if you are interested in overall counts but difficult to visually see if there is a difference between categories because of the **different counts**
-- proportion: best if you are interested in the **rate** within each category. Not concerned with counts.
-- side-by-side: best if you want to see differences between categories but still want to see the count discrepancies between the main category
+-   stacked: best if you are interested in overall counts but difficult to visually see if there is a difference between categories because of the **different counts**
+-   proportion: best if you are interested in the **rate** within each category. Not concerned with counts.
+-   side-by-side: best if you want to see differences between categories but still want to see the count discrepancies between the main category
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### Example 2: Barplots {.scrollable .smaller}
 
 What if we want to visualize the distribution of `sex` in each of the `species`. There are 4 main ways to visualize multiple levels within a categorical data:
@@ -254,7 +242,7 @@ ggplot(data=penguins, aes(x = species))+
 ```
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon="false"}
 ### Extra information and resources {.scrollable}
 
 **"factor" vs "character" variable**
@@ -264,17 +252,14 @@ ggplot(data=penguins, aes(x = species))+
 -   [Factors in R](https://www.stat.berkeley.edu/~s133/factors.html)
 :::
 
-
 ## Activity Solution
 
 Need to add. See RStudio Cloud TA Solutions for now.
 
 ## Homework
 
-::: agenda
 -   Complete and submit Activity 04
 
 -   Read Sections 3.0 - 3.3 of the book
 
 -   Complete and submit Reading Check 05_wrangling1
-:::

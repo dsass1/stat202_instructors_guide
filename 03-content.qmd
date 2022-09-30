@@ -3,14 +3,15 @@
 ```{r}
 #| include: false
 library(tidyverse)
+library(palmerpenguins)
 library(gt)
 ```
 
-Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.github.io/intro-stat-ds/2-viz.html) and focuses on making scatterplots with `ggplot()`.
+Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.github.io/intro-stat-data-sci/02-visualization.html) and focuses on making scatterplots with `ggplot()`.
 
+::: {.callout-note icon="false"}
 ## Agenda
 
-::: agenda
 \~ 15 min <span class="tab"> Slide deck
 
 \~ 25 min <span class="tab"> Students work on Activity 02
@@ -20,36 +21,34 @@ Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.
 
 ## Slide Deck
 
-::: slide-deck
-### Today's goals
+::: {.callout-note appearance="simple" icon="false"}
+## Today's goals
 
 <br/>
 
-::: columns
-::: {.column width="60%"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.60\textwidth}"}
 1.  Create a scatterplot
 2.  Properly describe a scatterplot
 3.  Change aesthetics such as color and shape in your plot
 4.  Solve overplotting issues
 :::
 
-::: {.column width="40%"}
-::: {style="opacity:0.75}
+::: {.col data-latex="{0.40\textwidth}"}
 ![](images/images_horst/ggplot2_exploratory.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
 :::
 :::
-:::
 
-::: slide-deck
-### The Grammar of Graphics {.smaller}
+::: {.callout-note appearance="simple" icon="false"}
+## The Grammar of Graphics
 
-::: columns
-::: {.column width="85%"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 Defines a set of rules for constructing statistical graphics by combining different types of **layers**.
 :::
 
-::: {.column width="15%"}
+::: {.col data-latex="{0.15\textwidth}"}
 ![](images/images_lecture/grammar_graphics.png){#id .class width="100px" height="100px"}
 :::
 :::
@@ -59,7 +58,7 @@ Defines a set of rules for constructing statistical graphics by combining differ
 grammar <- tibble(Layer = c("Data", "Aesthetics", "Geometries", "Facets", "Statistics", "Coordinates", "Theme"),
                   Function =c("ggplot( )", "aes( )", "geom_*( )", "facet_*( )", "stat_*( )", "coord_*( )", "theme( )"), Explanation = c("initialize plot and define dataset first", "how variables are mapped", "how data is conveyed", "separates plots by categories", "statistical transformations", "customize coord system", "customize non-data components"))
 
-grammar %>% 
+grammar %>%
   gt::gt() %>%
   tab_style(
     style = cell_text(weight = "bold"),
@@ -78,7 +77,7 @@ grammar %>%
   tab_style(
     style = "padding-left:40px;padding-right:40px;",
     locations = cells_body()
-  ) %>% 
+  ) %>%
   tab_options(
     table.font.size = 12,
     column_labels.background.color = "lightgray",
@@ -89,8 +88,8 @@ grammar %>%
 Only the *first three* layers are essential components that must be defined when building a graphic.
 :::
 
-::: slide-deck
-### 5NG#1: Scatterplots
+::: {.callout-note appearance="simple" icon="false"}
+## 5NG#1: Scatterplots
 
 Scatterplots allow you to visualize the **relationship** between 2 **numerical** variables.
 
@@ -107,8 +106,8 @@ ggplot(data= my_data, mapping = aes(x = var1, y = var2)) +
 **Scatterplot language:** Construct a scatterplot of **Y by X**.
 :::
 
-::: slide-deck
-### 5NG#1: Scatterplots
+::: {.callout-note appearance="simple" icon="false"}
+## 5NG#1: Scatterplots
 
 When describing scatterplots...
 
@@ -119,30 +118,34 @@ When describing scatterplots...
 -   Check for overplotting issues.
 :::
 
-::: slide-deck
-### The Palmer Penguins Dataset:
+::: {.callout-note appearance="simple" icon="false"}
+## The Palmer Penguins Dataset:
 
 ```{r}
 library(palmerpenguins)
 glimpse(penguins)
 ```
 
-::: {layout-ncol="2"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.5\textwidth}"}
 ![](images/images_horst/palmer_penguin_species.png){width="200px" height="150px"}
+:::
 
+::: {.col data-latex="{0.5\textwidth}"}
 ![](images/images_horst/palmer_penguin.png){width="200px" height="150px"}
+:::
 :::
 
 <small> Artwork by \@allison_horst </small>
 :::
 
-::: activity
-::: columns
-::: {.column width="90%"}
+::: {.callout-important appearance="minimal"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.90\textwidth}"}
 How would you describe the scatterplot?
 :::
 
-::: {.column width="10%"}
+::: {.col data-latex="{0.10\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
@@ -153,11 +156,11 @@ How would you describe the scatterplot?
 -   Some students may have noticed what appears to be three clusters! We will look at clusters in the next example.
 :::
 
-::: slide-deck
-### Example 1: Describing scatterplots
+::: {.callout-note appearance="simple" icon="false"}
+## Example 1: Describing scatterplots
 
 ::: panel-tabset
-### Plot
+## Plot
 
 ```{r}
 #| echo: true
@@ -166,7 +169,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_length_mm)) +
   geom_point()
 ```
 
-### Data
+## Data
 
 ```{r}
 glimpse(penguins)
@@ -174,13 +177,13 @@ glimpse(penguins)
 :::
 :::
 
-::: activity
-::: columns
-::: {.column width="90%"}
+::: {.callout-important appearance="minimal"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.90\textwidth}"}
 How would you describe the scatterplot?
 :::
 
-::: {.column width="10%"}
+::: {.col data-latex="{0.10\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
@@ -189,17 +192,14 @@ How would you describe the scatterplot?
 -   Teaching tip: draw an oval around the points.
 :::
 
-::: activity
+::: {.callout-important appearance="minimal"}
 But the clusters don't appear to be negative... what variable might be causing these two separate clusters?
 
 -   Since there are two your first instinct is probably the variable `sex`
 :::
 
-::: slide-deck
-### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
-
-::: panel-tabset
-### Plot
+::: {.callout-note appearance="simple" icon="false"}
+## Example 2: Describing scatterplots
 
 ```{r}
 #| eval: false
@@ -209,29 +209,22 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
 
 ```{r}
 #| echo: false
-#| fig-cap: "Fig B"
 ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
-  geom_point() +
+  geom_point() + 
   stat_ellipse(color = "red")
 ```
 
-### Data
-
-```{r}
-glimpse(penguins)
-```
-:::
 :::
 
-::: activity
+::: {.callout-important appearance="minimal"}
 But `sex` is not the cause of the clusters. Try another categorical variable that might cause different flipper and bill length.
 :::
 
-::: slide-deck
-### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
+::: {.callout-note appearance="simple" icon="false"}
+## Example 2: Describing scatterplots
 
 ::: panel-tabset
-### Plot
+## Plot
 
 ```{r}
 #| fig-cap: "Fig C"
@@ -239,7 +232,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = sex)) +
   geom_point()
 ```
 
-### Data
+## Data
 
 ```{r}
 glimpse(penguins)
@@ -247,15 +240,15 @@ glimpse(penguins)
 :::
 :::
 
-::: activity
+::: {.callout-important appearance="minimal"}
 Now describe the scatterplot: Weakly positive linear for Adelie and Chinstrap species. These two species appear to be similar with the center of the grouping having a flipper length around 190 mm and bill depth around 18.5mm. Gentoo also has a positive linear relationship, perhaps more moderate than weak. Gentoo have a longer flipper but shorter bill depth than the other 2 species.
 :::
 
-::: slide-deck
-### Example 2: Describing scatterplots {.scrollable auto-animate="true"}
+::: {.callout-note appearance="simple" icon="false"}
+## Example 2: Describing scatterplots
 
 ::: panel-tabset
-### Plot
+## Plot
 
 ```{r}
 #| fig-cap: "Fig D"
@@ -263,7 +256,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm, color = species)) +
   geom_point()
 ```
 
-### Data
+## Data
 
 ```{r}
 glimpse(penguins)
@@ -271,10 +264,10 @@ glimpse(penguins)
 :::
 :::
 
-::: slide-deck
-### Common Coding Errors {.scrollable}
+::: {.callout-note appearance="simple" icon="false"}
+## Common Coding Errors
 
-1.  
+1.
 
 ```{r}
 #| eval: false
@@ -282,15 +275,12 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
   geom_point() +
 ```
 
-::: fragment
 ![](images/images_lecture/error_2a.png){width="400px" height="75px"}
-:::
 
-::: fragment
+
 Plus sign to nowhere. What would happen if you type "1+2+" into a calculator? An error!
-:::
 
-2.  
+2.
 
 ```{r}
 #| eval: false
@@ -298,15 +288,11 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +
   geom_point()
 ```
 
-::: fragment
 ![](images/images_lecture/error_2b.png){width="400px" height="75px"}
-:::
 
-::: fragment
 All parenthesis must me closed!
-:::
 
-3.  
+3.
 
 ```{r}
 #| eval: false
@@ -314,17 +300,13 @@ ggplot(Penguins, aes(x=Flipper_length_mm, y=Bill_depth_mm) +
   geom_point()
 ```
 
-::: fragment
 ![](images/images_lecture/error_2c.png){width="400px" height="75px"}
-:::
 
-::: fragment
 R is case sensitive! Make sure the data and variable names match EXACTLY.
 :::
-:::
 
-::: slide-deck
-### Extra information and resources {.scrollable}
+::: {.callout-note appearance="simple" icon="false"}
+## Extra information and resources
 
 <br>
 
@@ -332,7 +314,7 @@ R is case sensitive! Make sure the data and variable names match EXACTLY.
 
 -   Numerical vs Categorical data examples:
 
-![](images/images_lecture/data_types.png){.class width="500px" height="300px"}
+![](images/images_lecture/data_types.png){height="2.5in"}
 :::
 
 ## Activity Solution
@@ -341,10 +323,8 @@ Need to add. See RStudio Cloud TA Solutions for now.
 
 ## Homework
 
-::: agenda
 -   Complete and submit Activity 02
 
 -   Read Sections 2.4 - 2.6 of the book
 
 -   Complete and submit Reading Check 03_ggplot2
-:::

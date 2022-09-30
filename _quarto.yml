@@ -28,13 +28,19 @@ format:
     echo: fenced
     warning: false
     message: false
+    self-contained: true
+    self-contained-math: true
   pdf:
     documentclass: scrreprt
+    keep-tex: true
+    include-in-header: columns.tex
     number-depth: 1
     toc-depth: 2
     echo: fenced
     warning: false
     message: false
+    self-contained: true
+    self-contained-math: true
 
 editor: visual
 

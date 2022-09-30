@@ -3,7 +3,7 @@
 ## 11 week Schedule
 
 |        | Topic                          | Textbook              | Agenda       |
-|------------------|------------------|------------------|------------------|
+|--------|--------------------------------|-----------------------|--------------|
 | Day 1  | Syllabus Day                   |                       | Syllabus Day |
 | Day 2  | Intro to R                     | Preface and Chapter 1 | Activity 01  |
 | Day 3  | Data Visualization             | Sections 2.0-2.3      | Activity 02  |
@@ -35,7 +35,7 @@
 ## 15 week Schedule
 
 |        | Topic                          | Textbook              | Agenda       |
-|------------------|------------------|------------------|------------------|
+|--------|--------------------------------|-----------------------|--------------|
 | Day 1  | Syllabus Day                   |                       | Syllabus Day |
 | Day 2  | Intro to R                     | Preface and Chapter 1 | Activity 01  |
 | Day 3  | Data Visualization             | Sections 2.0-2.3      | Activity 02  |

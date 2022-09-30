@@ -9,11 +9,12 @@ library(grid)
 library(gridExtra)
 ```
 
-Today's lesson covers [Section 2.4 - 2.6](https://nustat.github.io/intro-stat-ds/2-viz.html#linegraphs) and focuses on making linegraphs and histograms with `ggplot()`.
+Today's lesson covers [Section 2.4 - 2.6](https://nustat.github.io/intro-stat-data-sci/02-visualization.html) and focuses on making linegraphs and histograms with `ggplot()`.
 
+
+:::{.callout-note icon=false}
 ## Agenda
 
-::: agenda
 \~ 15 min <span class="tab"> Slide deck
 
 \~ 25 min <span class="tab"> Students work on Activity 02
@@ -23,7 +24,7 @@ Today's lesson covers [Section 2.4 - 2.6](https://nustat.github.io/intro-stat-ds
 
 ## Slide Deck
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Today's goals
 
 <br/>
@@ -37,14 +38,12 @@ Today's lesson covers [Section 2.4 - 2.6](https://nustat.github.io/intro-stat-ds
 :::
 
 ::: {.column width="40%"}
-::: {style="opacity:0.75}
 ![](images/images_horst/ggplot2_masterpiece.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
 :::
 :::
-:::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### 5NG#2: Linegraphs
 
 Linegraphs show the **relationship** between 2 **numerical** variables.
@@ -62,7 +61,7 @@ ggplot(data= my_data, mapping = aes(x = var1, y = var2)) +
 ```
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### 5NG#2: Linegraphs
 
 When describing linegraphs...
@@ -73,7 +72,7 @@ When describing linegraphs...
 -   Check x and y scales to make sure they are appropriate.
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### 5NG#3: Histograms
 
 -   Histograms are used to visualize the **distribution** of a single **numerical** variable.
@@ -83,7 +82,7 @@ When describing linegraphs...
 -   There is **no** 'y' position aesthetic for `geom_histogram()` because we are investigating a single variable.
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### 5NG#3: Histograms
 
 **Histogram syntax in R:**
@@ -111,7 +110,7 @@ Type `colors()` in the **console** to view all possible colors.
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### 5NG#3: Histograms
 
 ```{r}
@@ -152,7 +151,7 @@ grid.arrange(p1, p2, p3, c1, c2, c3,
 ```
 :::
 
-::: activity
+:::{.callout-important appearance="minimal"}
 ::: columns
 ::: {.column width="90%"}
 Teaching tip: open up the shiny app so student's can see how the bins change as you move the slider.
@@ -171,7 +170,7 @@ Describe the districution? - center around 3750 - spread in terms of range is \~
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Example 1: Histogram bins {.scrollable .smaller}
 
 Which bin size is most appropriate and describe the distribution of penguin body mass.
@@ -216,7 +215,7 @@ https://northwestern-university.shinyapps.io/lec03_histogram/
 :::
 :::
 
-::: activity
+:::{.callout-important appearance="minimal"}
 ::: columns
 ::: {.column width="90%"}
 Teaching tip: open up the shiny app so student's can see how the bins change as you move the slider.
@@ -238,7 +237,7 @@ Describe the districution.
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Example 2: Histogram bins {.scrollable .smaller}
 
 Which bin size is most appropriate and describe the distribution of penguin flipper length.
@@ -282,7 +281,7 @@ Which bin size is most appropriate and describe the distribution of penguin flip
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Faceting {.scrollable .smaller}
 
 -   Faceting is used to make the same plot for different subgroups of the dataset.
@@ -298,10 +297,9 @@ ggplot(penguins, aes(x=flipper_length_mm)) +
     geom_histogram(color = "white", fill = "tomato1", bins = 11) +
     facet_wrap(~ species)
 ```
-
 :::
 
-::: activity
+:::{.callout-important appearance="minimal"}
 ::: columns
 ::: {.column width="90%"}
 Which is correct?
@@ -316,7 +314,7 @@ Which is correct?
 :::
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Common Coding Errors {.scrollable}
 
 Which of the following are correct?
@@ -354,7 +352,7 @@ ggplot(penguins) +
 ```
 :::
 
-::: slide-deck
+::: {.callout-note appearance="simple" icon=false}
 ### Extra information and resources {.scrollable .smaller}
 
 [Wikipedia bin size info](https://en.wikipedia.org/wiki/Histogram#Number_of_bins_and_width)
@@ -376,10 +374,9 @@ Need to add. See RStudio Cloud TA Solutions for now.
 
 ## Homework
 
-::: agenda
 -   Complete and submit Activity 03
 
 -   Read Sections 2.7 - 2.9 of the book
 
 -   Complete and submit Reading Check 04_ggplot3
-:::
+
