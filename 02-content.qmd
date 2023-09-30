@@ -168,34 +168,29 @@ Export your completed document and submit the activity on Canvas.
 Today's slide deck is more of a resource for student's to refer back to rather than an actual lecture.
 
 ::: {.callout-note appearance="simple" icon="false"}
-
 ## Today's goals
 
 <br/>
 
-::::::{.cols data-latex=""}
-
-:::{.col data-latex="{0.6\textwidth}"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.6\\textwidth}"}
 1.  Change the `yaml` heading on a document
 2.  Create your first code chunk!
 3.  Learn the code chunk settings
 4.  Assign values to a variable
 :::
 
-:::{.col data-latex="{0.4\textwidth}"}
+::: {.col data-latex="{0.4\\textwidth}"}
 ![](images/images_horst/horst_rstudio_air.png){height="1in"}
 
 <br/>
 
 <small> Artwork by \@allison_horst </small>
 :::
-
-::::::
-
+:::
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
-
 ## Agenda
 
 -   Complete today's activity first!
@@ -204,50 +199,42 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
-
 ## RStudio interface
 
 ::: {style="text-align: center"}
 ![](images/images_guide/rstudio_interface_complete.png)
 :::
-
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## Useful Buttons
 
-::::::{.cols data-latex=""}
-
-:::{.col data-latex="{0.5\textwidth}"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.5\\textwidth}"}
 ![](images/images_lecture/rstudio_viewer.png)
 :::
 
-:::{.col data-latex="{0.5\textwidth}"}
+::: {.col data-latex="{0.5\\textwidth}"}
 ![](images/images_lecture/rstudio_export.png)
 :::
-
-::::::
+:::
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
-
 ## Useful code chunk settings
 
-::::::{.cols data-latex=""}
-
-:::{.col data-latex="{0.35\textwidth}"}
-
-```{{r}}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.35\\textwidth}"}
+``` {{r}}
 #| message: false
 #| warning: false
 #| eval: false
 #| echo: false
 #| include: false
 ```
-
 :::
 
-:::{.col data-latex="{0.65\textwidth}"}
+::: {.col data-latex="{0.65\\textwidth}"}
 -   `message: false` prevents messages from appearing in knitted doc
 
 -   `warning: false` prevents warnings from appearing in knitted doc
@@ -258,9 +245,7 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 -   `include: false` prevents code and its results from printing but still runs the code when knitted
 :::
-
-::::::
-
+:::
 :::
 
 ## Homework

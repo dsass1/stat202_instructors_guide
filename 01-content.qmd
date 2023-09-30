@@ -2,7 +2,7 @@
 
 Welcome to class! Today is all about getting setup with the needed resources and reviewing the syllabus.
 
-:::{.callout-note icon=false}
+::: {.callout-note icon="false"}
 ## Agenda
 
 \~ 15 min <span class="tab"> Syllabus and expectations.
@@ -14,12 +14,11 @@ Welcome to class! Today is all about getting setup with the needed resources and
 
 ## Slide Deck
 
-:::{.callout-important icon=false}
+::: {.callout-important icon="false"}
 ## Teaching note:
+
 I recommend using RStudio Cloud if possible for ease of getting started. Otherwise you will need to dedicate more time towards downloading R and RStudio. See the sample survey for some examples of questions to ask your students! We use these survey results on the exams.
 :::
-
-::: {.callout-note appearance="simple" icon=false}
 
 ## Today's tasks
 
@@ -32,14 +31,11 @@ Make sure you have completed the following agenda items by the end of class!
 5.  Complete the [google survey](https://docs.google.com/forms/d/e/1FAIpQLSfdKddsg7CoaY7WwM2gc9iiUKr8mtSRbKQ8oLAgD9cv0ugJRw/viewform?usp=sf_link) - we will use this data later.
 6.  Test out the homework system Reading Check 01 (RC 01).
 7.  Login/create your [Northwestern Zoom Account](https://northwestern.zoom.us/) if you do not have one. This will be used for office hours or requested appointments.
-:::
 
+***
 
 ## Homework
-
 
 -   Read Preface and Chapter 1 of the book
 
 -   Complete and submit Reading Check 01_intro
-
-

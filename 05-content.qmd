@@ -7,14 +7,14 @@ library(ISDSdatasets)
 library(palmerpenguins)
 ```
 
-Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-ds/2-viz.html#boxplots) and focuses on making boxplots and barplots with `ggplot()`.
+Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-data-sci/02-visualization.html) and focuses on making boxplots and barplots with `ggplot()`.
 
 ::: {.callout-note icon="false"}
 ## Agenda
 
 \~ 15 min <span class="tab"> Slide deck
 
-\~ 25 min <span class="tab"> Students work on Activity 02
+\~ 25 min <span class="tab"> Students work on Activity 04
 
 \~ 10 min <span class="tab"> Work through a select problem in detail from the activity as a class
 :::
@@ -26,16 +26,20 @@ Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-ds
 
 <br/>
 
-::: columns
-::: {.column width="60%"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.60\\textwidth}"}
 1.  Create a boxplot
 2.  Create a barplot
 3.  Properly describe a boxplot and barplot
 4.  Display barplots in various ways by category
 :::
 
-::: {.column width="40%"}
-![](images/images_horst/r_first_then.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
+::: {.col data-latex="{0.40\\textwidth}"}
+![](images/images_horst/r_first_then.png){height="1in"} 
+
+<br/>
+
+<small> Artwork by \@allison_horst </small>
 :::
 :::
 :::
@@ -62,12 +66,12 @@ If you switch x and y, it will just change the orientation of the boxplot (perso
 ::: {.callout-note appearance="simple" icon="false"}
 ### 5NG#4: Boxplots
 
-::: columns
-::: {.column width="40%"}
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.40\\textwidth}"}
 <center>![](images/images_lecture/box_plot.png){height="2in"}</center>
 :::
 
-::: {.column width="60%"}
+::: {.col data-latex="{0.60\\textwidth}"}
 There are 3 things that we typically focus on and describe/compare when inspecting a boxplot:
 
 -   center
@@ -78,14 +82,15 @@ There are 3 things that we typically focus on and describe/compare when inspecti
 :::
 
 ::: {.callout-important appearance="minimal"}
-::: columns
-::: {.column width="90%"}
+
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.90\\textwidth}"}
 Is `Survived` a categorical or numerical variable?
 
 -   It should be categorical even though it is coded as numerical "dbl"
 :::
 
-::: {.column width="10%"}
+::: {.col data-latex="{0.10\\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
@@ -142,14 +147,15 @@ When describing a barplot we look for...
 :::
 
 ::: {.callout-important appearance="minimal"}
-::: columns
-::: {.column width="90%"}
+
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.90\\textwidth}"}
 Are we using `geom_bar()` or `geom_col()`?
 
 -   `geom_bar()`
 :::
 
-::: {.column width="10%"}
+::: {.col data-latex="{0.10\\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::

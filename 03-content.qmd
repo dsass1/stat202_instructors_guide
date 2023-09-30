@@ -27,14 +27,14 @@ Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.
 <br/>
 
 ::: {.cols data-latex=""}
-::: {.col data-latex="{0.60\textwidth}"}
+::: {.col data-latex="{0.60\\textwidth}"}
 1.  Create a scatterplot
 2.  Properly describe a scatterplot
 3.  Change aesthetics such as color and shape in your plot
 4.  Solve overplotting issues
 :::
 
-::: {.col data-latex="{0.40\textwidth}"}
+::: {.col data-latex="{0.40\\textwidth}"}
 ![](images/images_horst/ggplot2_exploratory.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
 :::
 :::
@@ -44,11 +44,11 @@ Onto the real fun now! Today's lesson covers [Section 2.0 - 2.3](https://nustat.
 ## The Grammar of Graphics
 
 ::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
+::: {.col data-latex="{0.85\\textwidth}"}
 Defines a set of rules for constructing statistical graphics by combining different types of **layers**.
 :::
 
-::: {.col data-latex="{0.15\textwidth}"}
+::: {.col data-latex="{0.15\\textwidth}"}
 ![](images/images_lecture/grammar_graphics.png){#id .class width="100px" height="100px"}
 :::
 :::
@@ -127,11 +127,11 @@ glimpse(penguins)
 ```
 
 ::: {.cols data-latex=""}
-::: {.col data-latex="{0.5\textwidth}"}
+::: {.col data-latex="{0.5\\textwidth}"}
 ![](images/images_horst/palmer_penguin_species.png){width="200px" height="150px"}
 :::
 
-::: {.col data-latex="{0.5\textwidth}"}
+::: {.col data-latex="{0.5\\textwidth}"}
 ![](images/images_horst/palmer_penguin.png){width="200px" height="150px"}
 :::
 :::
@@ -141,11 +141,11 @@ glimpse(penguins)
 
 ::: {.callout-important appearance="minimal"}
 ::: {.cols data-latex=""}
-::: {.col data-latex="{0.90\textwidth}"}
+::: {.col data-latex="{0.90\\textwidth}"}
 How would you describe the scatterplot?
 :::
 
-::: {.col data-latex="{0.10\textwidth}"}
+::: {.col data-latex="{0.10\\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
@@ -179,11 +179,11 @@ glimpse(penguins)
 
 ::: {.callout-important appearance="minimal"}
 ::: {.cols data-latex=""}
-::: {.col data-latex="{0.90\textwidth}"}
+::: {.col data-latex="{0.90\\textwidth}"}
 How would you describe the scatterplot?
 :::
 
-::: {.col data-latex="{0.10\textwidth}"}
+::: {.col data-latex="{0.10\\textwidth}"}
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 :::
 :::
@@ -213,7 +213,6 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
   geom_point() + 
   stat_ellipse(color = "red")
 ```
-
 :::
 
 ::: {.callout-important appearance="minimal"}
@@ -267,7 +266,7 @@ glimpse(penguins)
 ::: {.callout-note appearance="simple" icon="false"}
 ## Common Coding Errors
 
-1.
+1.  
 
 ```{r}
 #| eval: false
@@ -277,10 +276,9 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm)) +
 
 ![](images/images_lecture/error_2a.png){width="400px" height="75px"}
 
-
 Plus sign to nowhere. What would happen if you type "1+2+" into a calculator? An error!
 
-2.
+2.  
 
 ```{r}
 #| eval: false
@@ -292,7 +290,7 @@ ggplot(penguins, aes(x=flipper_length_mm, y=bill_depth_mm) +
 
 All parenthesis must me closed!
 
-3.
+3.  
 
 ```{r}
 #| eval: false

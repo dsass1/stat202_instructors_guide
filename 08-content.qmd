@@ -1,0 +1,118 @@
+# Day 08 {.unnumbered}
+
+```{r}
+#| include: false
+library(ggplot2)
+library(dplyr)
+library(palmerpenguins)
+```
+
+Today's lesson covers [Chapter 4](https://nustat.github.io/intro-stat-data-sci/04-tidy.html) and focuses on additional wrangling functions including `group_by()`, `mutate()`, `arrange()`, and `select()` functions.
+
+::: {.callout-note icon="false"}
+## Agenda
+
+\~ 5 min <span class="tab"> Slide deck
+
+\~ 15 min <span class="tab"> Students work on Activity 07
+
+\~ 10 min <span class="tab"> Go over importing data on Activity 07
+
+\~ 20 min <span class="tab"> Go over Exam 1 details and a few problems from the practice exam.
+:::
+
+## Slide Deck
+
+### Today's goals
+
+<br/>
+
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.60\\textwidth}"}
+1.  Import datasets
+2.  Can you determine if a dataset is tidy or messy?
+3.  Conduct an EDA
+:::
+
+::: {.col data-latex="{0.40\\textwidth}"}
+![](images/images_horst/tidyverse_celestial.png){height="1in"} <br> <small> Artwork by \@allison_horst </small>
+:::
+:::
+
+***
+
+### Importing Data
+
+Use the `tidyverse` and `readxl` packages to import data.
+
+```{r}
+#| eval: false
+#Import .csv
+filename <- read_csv("data/filename.csv")
+#Import .xlsx 
+filename <- read_excel("data/filename.xlsx")
+#Import .rds
+filename <- read_RDS("data/filename.rds")
+#Load .rda 
+load("data/filename.rda")
+```
+
+Computers are not smart! It can only access files that are sitting in your `working directory`. You must direct the computer to the file your data is located in!
+
+***
+
+### Tidy Data
+
+There are three interrelated rules which make a dataset tidy:
+
+-   Each variable must have its own column.
+-   Each observation must have its own row.
+-   Each value must have its own cell.
+
+***
+
+### Tidy Data (continued)
+
+<!-- ::: {.column-margin} -->
+<!-- b) is tidy -->
+<!-- ::: -->
+
+Which of the following are tidy?
+
+![a)](images/images_lecture/tidy5.PNG)
+
+![b)](images/images_lecture/tidy6.PNG)
+
+***
+
+### EDA
+
+Before using your data to make inferences, you should conduct an exploratory data analysis.
+
+You do this by:
+
+-   looking at the raw data: `skim(data)`
+-   looking at the summary stats: mean, sd, median, min, max, missing values
+-   and visualizing the data: `ggplot()`
+
+This helps you understand the data, form hypothesis, and aid in interpreting results.
+
+***
+
+### Example: EDA
+
+```{r}
+library(skimr)
+skim(penguins)
+```
+
+
+## Activity Solution
+
+Need to add. See RStudio Cloud TA Solutions for now.
+
+## Homework
+
+-   Complete and submit Activity 07
+
+-   Study for Exam 1!
