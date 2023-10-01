@@ -1,0 +1,8 @@
+# Preface {.unnumbered}
+
+Message about the course and material.
+
+All activities and lecture slides can be downloaded from the Posit Cloud [ISDS Course Content](https://posit.cloud/content/6672899)
+
+Reading Tutorials are completed using RStudio. Visit the [isdsTutorials website](https://nustat.github.io/isdsTutorials/) for information on how to install the package and run the tutorials.
+

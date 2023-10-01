@@ -33,7 +33,7 @@ Make sure you have completed the following agenda items by the end of class!
   Install the required package: `remotes::install_github("NUstat/isdsTutorials", dependencies = TRUE`
   Try running the first tutorial: `learnr::run_tutorial("01_intro", package = "isdsTutorials")`
 6.  Login/create your [Northwestern Zoom Account](https://northwestern.zoom.us/) if you do not have one. This will be used for office hours or requested appointments.
-7.  Complete the [google survey](https://docs.google.com/forms/d/e/1FAIpQLSfdKddsg7CoaY7WwM2gc9iiUKr8mtSRbKQ8oLAgD9cv0ugJRw/viewform?usp=sf_link) - we will use this data later.
+7.  Complete the [google survey](https://forms.gle/eoPS2oXfPumsWaCd7) - we will use this data later.
 
 ------------------------------------------------------------------------
 
