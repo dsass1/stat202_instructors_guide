@@ -5,19 +5,23 @@ project:
 book:
   title: "Introduction to Statistics and Data Science: Instructor's Guide"
   author: "Danielle Sass"
-  date: "9/08/2022"
+  downloads: [pdf]
+  date: today
+  date-format: iso
+  site-url: https://dsass1.github.io/stat202_instructors_guide/
+  repo-url: https://github.com/dsass1/stat202_instructors_guide
   chapters:
     - index.qmd
     - 00-syllabi.qmd
     - 00-schedule.qmd
     - 01-content.qmd
-    - 02-content.qmd
-    - 03-content.qmd
-    - 04-content.qmd
-    - 05-content.qmd
-    - 06-content.qmd
-    - 07-content.qmd
-    - 08-content.qmd
+    # - 02-content.qmd
+    # - 03-content.qmd
+    # - 04-content.qmd
+    # - 05-content.qmd
+    # - 06-content.qmd
+    # - 07-content.qmd
+    # - 08-content.qmd
     - references.qmd
   
 
@@ -31,8 +35,8 @@ format:
     echo: fenced
     warning: false
     message: false
-    self-contained: true
-    self-contained-math: true
+    embed-resources: true
+    embed-resources-math: true
   pdf:
     documentclass: scrreprt
     keep-tex: true
@@ -42,8 +46,9 @@ format:
     echo: fenced
     warning: false
     message: false
-    self-contained: true
-    self-contained-math: true
+    embed-resources: true
+    embed-resources-math: true
 
-editor: visual
+
+from: markdown+emoji
 

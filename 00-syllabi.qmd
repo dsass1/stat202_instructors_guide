@@ -4,7 +4,7 @@
 
 |          | Day | Time              | Location |
 |----------|-----|-------------------|----------|
-| Lectures | MWF | 9:00 am - 9:50 am | Room ??? |
+| Lectures | MWF | 9:00 am - 9:50 am | Room 107 |
 
 **Prerequisite:** High School Algebra
 
@@ -13,7 +13,7 @@
 |            | Title     | Email | Office Hours   |
 |------------|-----------|-------|----------------|
 | Prof. Name | Professor |       | By Appointment |
-| Name       | TA        |       | Tue/Thur 4-5pm |
+| TA Name    | TA        |       | Tue/Thur 4-5pm |
 
 ## Learning objectives
 
@@ -39,11 +39,11 @@ This class will follow an active learning design. Meaning the majority of each l
 
 ## Textbooks
 
-We will be using [Introduction to Statistics and Data Science](https://nustat.github.io/intro-stat-ds/) which is a free online book that we have been developing for this course.
+We will be using [Introduction to Statistics and Data Science](https://nustat.github.io/intro-stat-data-sci/) which is a free online book that we have been developing for this course.
 
 ## Software
 
-We will be using/introducing the free statistical software [RStudio Cloud](https://rstuido.cloud/).
+We will be using/introducing the free statistical software [Posit Cloud](https://posit.cloud/).
 
 ## Hardware
 
@@ -51,61 +51,66 @@ Students will need a laptop or Chromebook to be able to follow lectures and to w
 
 ## Assessment
 
-Assessment for the course is comprised of five components: participation, reading checks, activities, 3 exams, and final project.
+Assessment for the course is comprised of five components: participation, reading tutorials, activities, 3 exams, and final project.
 
 ### Participation
 
-### Reading Checks
+### Reading Tutorials
 
-*The lowest three grades will be dropped at the end of the semester.*
+Reading tutorials will be completed using Posit Cloud/Rstudio and uploaded to the course Canvas page. Each reading tutorial will be scaled to be worth 10 points. Reading tutorials will be accepted up to 3 days after the due date with a 10% late penalty.
+
+*The lowest reading tutorial grade will be dropped at the end of the semester.*
 
 ### Activities
 
-*The lowest homework grade will be dropped at the end of the semester.*
+Daily activities will be worth 10 points. Activities will be accepted up to 3 days after the due date with a 10% late penalty.
 
+*The lowest activity grade will be dropped at the end of the semester.*
 
 ### Exams
 
-The midterm exam will focus on conceptual knowledge of course material and be taken in-class through the IMathAS software. Students will be allowed one 8.5 x 11 inch cheat sheet (front & back) on the in-class exams.
+There will be 3 in-class exams; they will be structured very similarly to your reading tutorials. Roughly half of it will focus on conceptual knowledge and roughly half will focus on practical applications. Students will be allowed one 8.5 x 11 inch cheat sheet (front & back) on each in-class exams. The exams are not cumulative.
 
+### Project
 
-### Final Project
-
-The projects will focus on practical application of course material. More information about the project will be provided during the quarter.
-
+The final project will be completed in groups of 3-6 people and allow you to explore a dataset of your choice. More information will be provided later in the quarter.
 
 ### Exam Improvement Policy
 
-We have worked to develop a policy geared towards a growth mindset. That is, we want a policy where students clearly demonstrate that they have used the midterm as a diagnostic tool to learn from and improve their understanding of statistics. Since the final is cumulative we have settled on a policy where we will replace your in-class midterm score with your in-class final score --- only in cases where it is an improvement
+We have worked to develop a policy geared towards a growth mindset. That is, we want a policy where students clearly demonstrate that they have used the exam as a diagnostic tool to learn from and improve their understanding of statistics. There is NO final cumulative exam during the designated final exam time, instead you may choose to retake 1 exam during the exam time. This exam will replace your old score --- only in cases where it is an improvement.
+
+### Missed Exam Policy
+
+There are no make-up exams. If you miss an exam due to illness, travel, etc., you will need to take the exam during the final exam period as your re-take exam.
 
 ## Grading
 
 The final course grade will be calculated as follows:
 
-| Category       | Percentage |
-|----------------|------------|
-| Participation  |  5%        |
-| Reading Check  | 15%        |
-| Activities     | 10%        |
-| Exam 1         | 20%        |
-| Exam 2         | 20%        |
-| Exam 3         | 20%        |
-| Project        | 10%        |
+| Category          | Percentage |
+|-------------------|------------|
+| Participation     | 5%         |
+| Reading Tutorials | 15%        |
+| Activities        | 10%        |
+| Exam 1            | 20%        |
+| Exam 2            | 20%        |
+| Exam 3            | 20%        |
+| Project           | 10%        |
 
 The final letter grade will be determined based on the following thresholds:
 
-| Letter Grade | Final Grade       |
-|--------------|-------------------|
-| A            | \>= 93            |
-| A-           | 90 - 92.9         |
-| B+           | 87 - 89.9         |
-| B            | 83 - 86.9         |
-| B-           | 80 - 82.9         |
-| C+           | 77 - 79.9         |
-| C            | 73 - 76.9         |
-| C-           | 70 - 72.9         |
-| D            | 60 - 69.9         |
-| F            | \< 59.9           |
+| Letter Grade | Final Grade |
+|--------------|-------------|
+| A            | \>= 93      |
+| A-           | 90 - 92.9   |
+| B+           | 87 - 89.9   |
+| B            | 83 - 86.9   |
+| B-           | 80 - 82.9   |
+| C+           | 77 - 79.9   |
+| C            | 73 - 76.9   |
+| C-           | 70 - 72.9   |
+| D            | 60 - 69.9   |
+| F            | \< 59.9     |
 
 ## Tips for success
 
@@ -118,7 +123,7 @@ The final letter grade will be determined based on the following thresholds:
 
 ## Asking Questions & Course Communication
 
-This term we will be using [Campuswire](https://campuswire.com) ("Enrollment Code: XXXX") as our preferred platform for questions about activities, reading checks, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructional team. Rather than emailing questions to the instructional team, you should post your questions on Campuswire.
+This term we will be using [Campuswire](https://campuswire.com) ("Enrollment Code: XXXX") as our preferred platform for questions about activities, reading tutorials, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructional team. Rather than emailing questions to the instructional team, you should post your questions on Campuswire.
 
 The instructional team will check Campuswire periodically and answer questions, but we strongly encourage students to answer each other's questions. To this end, student will be able to earn bonus points --- see Canvas for details.
 
