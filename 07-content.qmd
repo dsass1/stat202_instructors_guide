@@ -39,7 +39,7 @@ Today's lesson covers [Section 3.4 - 3.9](https://nustat.github.io/intro-stat-da
 :::
 :::
 
-***
+------------------------------------------------------------------------
 
 ### Data Wrangling
 
@@ -53,7 +53,7 @@ In conjunction with past tools (`filter()` and `summarize()`) we will use:
 
 Rarely do we only use one of these tools in isolation. We "pipe" them together to wrangle data.
 
-***
+------------------------------------------------------------------------
 
 ### `group_by()`
 
@@ -63,7 +63,7 @@ Rarely do we only use one of these tools in isolation. We "pipe" them together t
 -   must be used in conjunction with another operator, Ex: summarize()
 -   can group by multiple criteria but must be included in the **same** function call
 
-***
+------------------------------------------------------------------------
 
 ### Example: `group_by()`
 
@@ -95,7 +95,7 @@ penguins %>%
   summarize(mean_mass = mean(body_mass_g))
 ```
 
-***
+------------------------------------------------------------------------
 
 ### `mutate()`
 
@@ -131,13 +131,12 @@ glimpse(penguins)
 
 Notice we overwrote the `penguins` dataset. You can ONLY overwrite the original data if you are **not changing** any of the original information. Otherwise store it as something NEW.
 
-***
+------------------------------------------------------------------------
 
 ### `arrange()`
 
 -   `arrange(variable)` sorts data in ascending (low to high; A to Z) order by default.\
 -   `arrange(desc(variable))` sorts data in descending (high to low; Z to A) order.
-
 
 **Example:**
 
@@ -148,7 +147,7 @@ penguins %>%
 
 ```
 
-***
+------------------------------------------------------------------------
 
 ### `select()`
 
@@ -187,7 +186,7 @@ head(penguins_body)
 ```
 :::
 
-***
+------------------------------------------------------------------------
 
 ### Other Useful Data Wrangling Functions
 
@@ -195,17 +194,18 @@ head(penguins_body)
 -   `top_n(n = 1, variable)` : return the largest value
 -   `top_n(n = -1, variable)` : return the smallest value
 
-***
+------------------------------------------------------------------------
 
 ### Data Wrangling Example
 
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 
-
-
 What if we want to start with our `penguins` dataset, then keep only observations that are not missing their `body_mass_g`, and then calculate the count by species, and then order the dataset from low to high.
 
-    a)
+```         
+a)
+```
+
 ```{r Example1}
 #| echo: true
 #| eval: false
@@ -215,8 +215,11 @@ penguins %>%
   summarize(count = n()) %>% 
   arrange(count)
 ```
-   
-    b)
+
+```         
+b)
+```
+
 ```{r Example2}
 #| echo: true
 #| eval: false
@@ -226,8 +229,11 @@ penguins %>%
   summarize(count = n()) %>% 
   arrange(count)
 ```
-    
-    c)
+
+```         
+c)
+```
+
 ```{r Example3}
 #| echo: true
 #| eval: false
@@ -237,8 +243,11 @@ penguins %>%
   summarize(count = n()) %>% 
   arrange(desc(count))
 ```
-    
-    d)
+
+```         
+d)
+```
+
 ```{r Example4}
 #| echo: true
 #| eval: false
@@ -249,7 +258,7 @@ penguins %>%
   arrange(count)
 ```
 
-***
+------------------------------------------------------------------------
 
 ## Activity Solution
 

@@ -39,7 +39,7 @@ Today's lesson covers [Chapter 4](https://nustat.github.io/intro-stat-data-sci/0
 :::
 :::
 
-***
+------------------------------------------------------------------------
 
 ### Importing Data
 
@@ -59,7 +59,7 @@ load("data/filename.rda")
 
 Computers are not smart! It can only access files that are sitting in your `working directory`. You must direct the computer to the file your data is located in!
 
-***
+------------------------------------------------------------------------
 
 ### Tidy Data
 
@@ -69,12 +69,14 @@ There are three interrelated rules which make a dataset tidy:
 -   Each observation must have its own row.
 -   Each value must have its own cell.
 
-***
+------------------------------------------------------------------------
 
 ### Tidy Data (continued)
 
 <!-- ::: {.column-margin} -->
+
 <!-- b) is tidy -->
+
 <!-- ::: -->
 
 Which of the following are tidy?
@@ -83,7 +85,7 @@ Which of the following are tidy?
 
 ![b)](images/images_lecture/tidy6.PNG)
 
-***
+------------------------------------------------------------------------
 
 ### EDA
 
@@ -97,7 +99,7 @@ You do this by:
 
 This helps you understand the data, form hypothesis, and aid in interpreting results.
 
-***
+------------------------------------------------------------------------
 
 ### Example: EDA
 
@@ -105,7 +107,6 @@ This helps you understand the data, form hypothesis, and aid in interpreting res
 library(skimr)
 skim(penguins)
 ```
-
 
 ## Activity Solution
 

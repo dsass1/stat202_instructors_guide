@@ -76,7 +76,6 @@ Operators for the `filter` Function
 | `<=`         | less than or equal to |
 :::
 :::
-
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
@@ -93,7 +92,6 @@ Subset the dataset to only include 'male' penguins.
 penguins %>% 
   filter(            )
 ```
-
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
@@ -111,10 +109,8 @@ penguins %>%
   filter(sex == "male")
 ```
 
-
 Remember to store your data with a new meaningful name.
 :::
-
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## Example 1
@@ -143,7 +139,6 @@ glimpse(penguins_male)
 Remember to store your data with a new meaningful name.
 :::
 
-
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 
 ::: {.callout-note appearance="simple" icon="false"}
@@ -166,7 +161,6 @@ glimpse(penguins)
 ```
 :::
 :::
-
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## Example 2
@@ -209,9 +203,7 @@ glimpse(penguins_heavy_m)
 :::
 
 ALWAYS inspect your new dataset to make sure everything is as expected.
-
 :::
-
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## summarize()
@@ -235,7 +227,6 @@ data_sumamry <- data %>%
 Now we can add calculations to describe the center and spread of our distribution plots!
 :::
 
-
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 
 ::: {.callout-note appearance="simple" icon="false"}
@@ -243,23 +234,26 @@ Now we can add calculations to describe the center and spread of our distributio
 
 Which of the following summary statistics are invariant to outliers?
 
-    a) mean     
-    b) median   
-    c) sd    
-    d) IQR
+```         
+a) mean     
+b) median   
+c) sd    
+d) IQR
+```
 
 How would the standard deviation of a distribution change if the maximum value was doubled?
 
-    a) increase
-    b) decrease
-    c) stay the same
-    d) not enough information
+```         
+a) increase
+b) decrease
+c) stay the same
+d) not enough information
+```
 :::
 
 ![](images/images_lecture/participate_icon.png){height="0.5in"}
 
 ::: {.callout-note appearance="simple" icon="false"}
-
 ## Example 3
 
 Consider the `penguins` dataset.
@@ -289,9 +283,7 @@ penguins_summary_d <- penguins %>%
   summarize(mean = mean(flipper_length_mm),
             count = n(flipper_length_mm) )
 ```
-
 :::
-
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## Example 3
@@ -322,9 +314,7 @@ penguins_summary_b <- penguins %>%
             count = n() )
 penguins_summary_b
 ```
-
 :::
-
 
 ::: {.callout-note appearance="simple" icon="false"}
 ## Example 3 (continued)

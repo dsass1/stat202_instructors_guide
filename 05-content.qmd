@@ -3,7 +3,6 @@
 ```{r}
 #| include: false
 library(tidyverse)
-library(ISDSdatasets)
 library(palmerpenguins)
 ```
 
@@ -35,7 +34,7 @@ Today's lesson covers [Section 2.7 - 2.9](https://nustat.github.io/intro-stat-da
 :::
 
 ::: {.col data-latex="{0.40\\textwidth}"}
-![](images/images_horst/r_first_then.png){height="1in"} 
+![](images/images_horst/r_first_then.png){height="1in"}
 
 <br/>
 
@@ -82,7 +81,6 @@ There are 3 things that we typically focus on and describe/compare when inspecti
 :::
 
 ::: {.callout-important appearance="minimal"}
-
 ::: {.cols data-latex=""}
 ::: {.col data-latex="{0.90\\textwidth}"}
 Is `Survived` a categorical or numerical variable?
@@ -147,7 +145,6 @@ When describing a barplot we look for...
 :::
 
 ::: {.callout-important appearance="minimal"}
-
 ::: {.cols data-latex=""}
 ::: {.col data-latex="{0.90\\textwidth}"}
 Are we using `geom_bar()` or `geom_col()`?
