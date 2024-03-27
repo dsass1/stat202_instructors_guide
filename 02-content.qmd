@@ -2,15 +2,17 @@
 
 Today's lesson covers [Preface and Chapter 1](https://nustat.github.io/intro-stat-data-sci/) and focuses on students getting familiar with Quarto in RStudio.
 
-::: {.callout-note icon="false"}
+
 ## Agenda
 
 \~ 25 min <span class="tab"> Students work in groups or independently on Activity 01.
 
 \~ 20 min <span class="tab"> Thoroughly walk through and discuss Activity 01 as a class.
 
-\~   5 min <span class="tab"> Make sure students know how to submit their activity! <br>    <span class="tab2"> Go through Slide Deck 01.
-:::
+\~   5 min <span class="tab"> Make sure students know how to submit their activity! 
+
+\~ Slide Deck 01 is just a resource for students to review on their own
+
 
 ## Activity Solution
 
@@ -172,7 +174,7 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 <br/>
 
-::: {.cols data-latex=""}
+:::: {.cols data-latex=""}
 ::: {.col data-latex="{0.6\\textwidth}"}
 1.  Change the `yaml` heading on a document
 2.  Create your first code chunk!
@@ -187,7 +189,8 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 <small> Artwork by \@allison_horst </small>
 :::
-:::
+::::
+
 :::
 
 ::: {.callout-note appearance="simple" icon="false"}
@@ -225,6 +228,7 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 
 ::: {.cols data-latex=""}
 ::: {.col data-latex="{0.35\\textwidth}"}
+````         
 ``` {{r}}
 #| message: false
 #| warning: false
@@ -232,6 +236,7 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 #| echo: false
 #| include: false
 ```
+````
 :::
 
 ::: {.col data-latex="{0.65\\textwidth}"}
@@ -248,10 +253,12 @@ Today's slide deck is more of a resource for student's to refer back to rather t
 :::
 :::
 
+------------------------------------------------------------------------
+
 ## Homework
 
 -   Complete and submit Activity 01
 
--   Read Sections 2.0 - 2.3 of the book
+-   Read [Sections 2.0 - 2.3](https://nustat.github.io/intro-stat-data-sci/02-visualization.html)
 
--   Complete and submit Reading Check 02_ggplot1
+-   Complete RT 02 by running `learnr::run_tutorial("02_ggplot1", package = "isdsTutorials")` in your Console and submitting the downloaded html to a learning management system 

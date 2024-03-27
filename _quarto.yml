@@ -29,6 +29,7 @@ bibliography: references.bib
 
 format:
   html:
+    css: ["style.css"]
     theme: [cosmo, style.scss]
     number-depth: 1
     toc-depth: 2

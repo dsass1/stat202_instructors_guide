@@ -4,38 +4,70 @@ Welcome to class! Today is all about getting setup with the needed resources and
 
 ## Agenda
 
-\~ 15 min <span class="tab"> Syllabus and expectations
+```{r}
+#| echo: false
+library(gt)
+library(tidyverse)
+agenda <- data.frame(time = c("15 min", "20 min", "15 min"),
+           agenda = c("Syllabus and expectations",
+                      "Welcome and get students setup with all of the needed resources",
+                      "Students take survey and get to know their neighbors"))
 
-\~ 20 min <span class="tab"> Welcome and get students setup with all of the needed resources
+agenda |> 
+  gt() |> 
+  cols_width(
+    time ~ pct(15)
+  ) |> 
+  tab_options(
+    table.width = pct(100),
+    #column_labels.padding = "200px",
+    column_labels.hidden = TRUE,
+    table_body.hlines.style = "none",
+    table.border.top.style = "hidden",
+    table.border.bottom.style = "hidden"
+  )
+```
 
-\~ 15 min <span class="tab"> Students take survey and get to know their neighbors
+
+<!-- \~ 15 min <span class="tab"> Syllabus and expectations -->
+
+<!-- \~ 20 min <span class="tab"> Welcome and get students setup with all of the needed resources -->
+
+<!-- \~ 15 min <span class="tab"> Students take survey and get to know their neighbors -->
 
 <!-- ## Slide Deck -->
 
-
 ## Today's tasks
+<!-- ::: {.callout-important icon="false"} -->
+<!-- ## Teaching note: -->
 
-::: {.callout-important icon="false"}
-## Teaching note:
+::: {.cols data-latex=""}
+::: {.col data-latex="{0.15\\textwidth}"}
 
-I recommend using Posit Cloud if possible for ease of getting started. Otherwise you will need to dedicate more time towards downloading R and RStudio. 
+`r fontawesome::fa("star", fill = "steelblue", prefer_type = "solid")`
+
+:::
+
+::: {.col data-latex="{0.85\\textwidth}"}
+I recommend using Posit Cloud if possible for ease of getting started. Otherwise you will need to dedicate more time towards downloading R and RStudio.
 
 See the sample survey for some examples of questions to ask your students! We use these survey results on the exams.
 :::
+:::
+
+<!-- ::: -->
 
 Make sure you have completed the following agenda items by the end of class!
 
 1.  Review the syllabus
 2.  Visit the course's [Campuswire page](https://campuswire.com) using your school email. Enrollment code: XXXX
-3.  Gain access to the Posit Cloud Class Workspace or install R and RStudio
-4.  We will be using [AHA slides](https://ahaslides.com) for participation.
-5.  Set up and test out the Reading Tutorials System. 
-  Install the required package: `remotes::install_github("NUstat/isdsTutorials", dependencies = TRUE`
-  Try running the first tutorial: `learnr::run_tutorial("01_intro", package = "isdsTutorials")`
+3.  We will be using [AHA slides](https://ahaslides.com) for participation.
+4.  Gain access to the Posit Cloud Class Workspace or install R and RStudio
+5.  Set up and test out the Reading Tutorials System. Install the required package: `remotes::install_github("NUstat/isdsTutorials", dependencies = TRUE)` Try running the first tutorial: `learnr::run_tutorial("01_intro", package = "isdsTutorials")`
 6.  Login/create your [Northwestern Zoom Account](https://northwestern.zoom.us/) if you do not have one. This will be used for office hours or requested appointments.
 7.  Complete the [google survey](https://forms.gle/eoPS2oXfPumsWaCd7) - we will use this data later.
 
-------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------ -->
 
 ## Homework
 
