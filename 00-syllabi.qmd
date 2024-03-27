@@ -47,11 +47,11 @@ We will be using/introducing the free statistical software [Posit Cloud](https:/
 
 ## Hardware
 
-Students will need a laptop or Chromebook to be able to follow lectures and to work with RStudio Cloud to complete activities. If access to a laptop is an issue, then please contact the course instructor and we will work to find an accommodation.
+Students will need a laptop or Chromebook to be able to follow lectures and to work with Posit Cloud to complete activities. If access to a laptop is an issue, then please contact the course instructor and we will work to find an accommodation.
 
 ## Assessment
 
-Assessment for the course is comprised of five components: participation, reading tutorials, activities, 3 exams, and final project.
+Assessment for the course is comprised of the following components: reading tutorials, activities, 3 exams, and a final project.
 
 ### Participation
 
@@ -81,7 +81,7 @@ We have worked to develop a policy geared towards a growth mindset. That is, we 
 
 ### Missed Exam Policy
 
-There are no make-up exams. If you miss an exam due to illness, travel, etc., you will need to take the exam during the final exam period as your re-take exam.
+There are no make-up exams. If you miss an exam due to illness, travel, etc., you will need to take the exam during the final exam period.
 
 ## Grading
 
@@ -89,13 +89,12 @@ The final course grade will be calculated as follows:
 
 | Category          | Percentage |
 |-------------------|------------|
-| Participation     | 5%         |
 | Reading Tutorials | 15%        |
 | Activities        | 10%        |
 | Exam 1            | 20%        |
 | Exam 2            | 20%        |
 | Exam 3            | 20%        |
-| Project           | 10%        |
+| Project           | 15%        |
 
 The final letter grade will be determined based on the following thresholds:
 

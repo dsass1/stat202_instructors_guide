@@ -9,7 +9,6 @@
   numbers=noendperiod]{scrreprt}
 
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -19,6 +18,10 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -119,6 +122,8 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{array}
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \makeatother
@@ -165,10 +170,12 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
 \makeatother
 \makeatletter
 \makeatother
@@ -190,11 +197,11 @@
 
 \title{Introduction to Statistics and Data Science: Instructor's Guide}
 \author{Danielle Sass}
-\date{2023-10-04}
+\date{2024-03-27}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, enhanced, boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, enhanced, interior hidden, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -208,6 +215,8 @@
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
 
+\markboth{Preface}{Preface}
+
 This book is meant to be a resource for instructors to provide a
 complete guide for teaching Introduction to Statistics and Data Science.
 
@@ -220,8 +229,8 @@ for information on how to install the package and run the tutorials.
 
 \begin{cols}
 
-\begin{col}{0.1\textwidth}
-\includegraphics[width=1.12em,height=1em]{./index_files/figure-pdf/fa-icon-a26fb0a0e540e124bcdee28d951f0027.pdf}
+\begin{col}{0.15\textwidth}
+\texttt{r\ fontawesome::fa("star",\ fill\ =\ "steelblue",\ prefer\_type\ =\ "solid")}
 
 \end{col}
 
@@ -232,30 +241,28 @@ This icon indicates a tip/suggestion!
 
 \end{cols}
 
-\includegraphics[width=1.12em,height=1em]{./index_files/figure-pdf/fa-icon-a26fb0a0e540e124bcdee28d951f0027.pdf}
-
-This icon indicates a tip/suggestion!
-
-\includegraphics[width=1.12em,height=1em]{./index_files/figure-pdf/fa-icon-a26fb0a0e540e124bcdee28d951f0027.pdf}
-This icon indicates a tip/suggestion!
-
 \bookmarksetup{startatroot}
 
 \hypertarget{sample-syllabus}{%
 \chapter*{Sample syllabus}\label{sample-syllabus}}
 \addcontentsline{toc}{chapter}{Sample syllabus}
 
+\markboth{Sample syllabus}{Sample syllabus}
+
 \hypertarget{course-info}{%
 \section*{Course info}\label{course-info}}
 \addcontentsline{toc}{section}{Course info}
 
+\markright{Course info}
+
 \begin{longtable}[]{@{}llll@{}}
-\toprule()
+\toprule\noalign{}
 & Day & Time & Location \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 Lectures & MWF & 9:00 am - 9:50 am & Room 107 \\
-\bottomrule()
 \end{longtable}
 
 \textbf{Prerequisite:} High School Algebra
@@ -264,19 +271,24 @@ Lectures & MWF & 9:00 am - 9:50 am & Room 107 \\
 \section*{Instructional Team}\label{instructional-team}}
 \addcontentsline{toc}{section}{Instructional Team}
 
+\markright{Instructional Team}
+
 \begin{longtable}[]{@{}llll@{}}
-\toprule()
+\toprule\noalign{}
 & Title & Email & Office Hours \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 Prof.~Name & Professor & & By Appointment \\
 TA Name & TA & & Tue/Thur 4-5pm \\
-\bottomrule()
 \end{longtable}
 
 \hypertarget{learning-objectives}{%
 \section*{Learning objectives}\label{learning-objectives}}
 \addcontentsline{toc}{section}{Learning objectives}
+
+\markright{Learning objectives}
 
 By the end of the quarter, you will be able to\ldots{}
 
@@ -291,7 +303,7 @@ By the end of the quarter, you will be able to\ldots{}
   through data and generate hypotheses and inferences to later test.
 \end{enumerate}
 
-\includegraphics[width=0.5\textwidth,height=\textheight]{./images/cartoon3308.png}
+\includegraphics[width=0.5\textwidth,height=\textheight]{images/cartoon3308.png}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -321,6 +333,8 @@ By the end of the quarter, you will be able to\ldots{}
 \section*{Course Structure}\label{course-structure}}
 \addcontentsline{toc}{section}{Course Structure}
 
+\markright{Course Structure}
+
 This class will follow an active learning design. Meaning the majority
 of each lecture will be dedicated to working on activities. A lot of
 what you do in this course will involve writing code, and coding is a
@@ -335,6 +349,8 @@ an activity as a class.
 \section*{Textbooks}\label{textbooks}}
 \addcontentsline{toc}{section}{Textbooks}
 
+\markright{Textbooks}
+
 We will be using
 \href{https://nustat.github.io/intro-stat-data-sci/}{Introduction to
 Statistics and Data Science} which is a free online book that we have
@@ -344,6 +360,8 @@ been developing for this course.
 \section*{Software}\label{software}}
 \addcontentsline{toc}{section}{Software}
 
+\markright{Software}
+
 We will be using/introducing the free statistical software
 \href{https://posit.cloud/}{Posit Cloud}.
 
@@ -351,8 +369,10 @@ We will be using/introducing the free statistical software
 \section*{Hardware}\label{hardware}}
 \addcontentsline{toc}{section}{Hardware}
 
+\markright{Hardware}
+
 Students will need a laptop or Chromebook to be able to follow lectures
-and to work with RStudio Cloud to complete activities. If access to a
+and to work with Posit Cloud to complete activities. If access to a
 laptop is an issue, then please contact the course instructor and we
 will work to find an accommodation.
 
@@ -360,9 +380,10 @@ will work to find an accommodation.
 \section*{Assessment}\label{assessment}}
 \addcontentsline{toc}{section}{Assessment}
 
-Assessment for the course is comprised of five components:
-participation, reading tutorials, activities, 3 exams, and final
-project.
+\markright{Assessment}
+
+Assessment for the course is comprised of the following components:
+reading tutorials, activities, 3 exams, and a final project.
 
 \hypertarget{participation}{%
 \subsection*{Participation}\label{participation}}
@@ -425,38 +446,41 @@ cases where it is an improvement.
 \addcontentsline{toc}{subsection}{Missed Exam Policy}
 
 There are no make-up exams. If you miss an exam due to illness, travel,
-etc., you will need to take the exam during the final exam period as
-your re-take exam.
+etc., you will need to take the exam during the final exam period.
 
 \hypertarget{grading}{%
 \section*{Grading}\label{grading}}
 \addcontentsline{toc}{section}{Grading}
 
+\markright{Grading}
+
 The final course grade will be calculated as follows:
 
 \begin{longtable}[]{@{}ll@{}}
-\toprule()
+\toprule\noalign{}
 Category & Percentage \\
-\midrule()
+\midrule\noalign{}
 \endhead
-Participation & 5\% \\
+\bottomrule\noalign{}
+\endlastfoot
 Reading Tutorials & 15\% \\
 Activities & 10\% \\
 Exam 1 & 20\% \\
 Exam 2 & 20\% \\
 Exam 3 & 20\% \\
-Project & 10\% \\
-\bottomrule()
+Project & 15\% \\
 \end{longtable}
 
 The final letter grade will be determined based on the following
 thresholds:
 
 \begin{longtable}[]{@{}ll@{}}
-\toprule()
+\toprule\noalign{}
 Letter Grade & Final Grade \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 A & \textgreater= 93 \\
 A- & 90 - 92.9 \\
 B+ & 87 - 89.9 \\
@@ -467,12 +491,13 @@ C & 73 - 76.9 \\
 C- & 70 - 72.9 \\
 D & 60 - 69.9 \\
 F & \textless{} 59.9 \\
-\bottomrule()
 \end{longtable}
 
 \hypertarget{tips-for-success}{%
 \section*{Tips for success}\label{tips-for-success}}
 \addcontentsline{toc}{section}{Tips for success}
+
+\markright{Tips for success}
 
 \begin{itemize}
 \tightlist
@@ -496,6 +521,8 @@ F & \textless{} 59.9 \\
 Communication}\label{asking-questions-course-communication}}
 \addcontentsline{toc}{section}{Asking Questions \& Course Communication}
 
+\markright{Asking Questions \& Course Communication}
+
 This term we will be using \href{https://campuswire.com}{Campuswire}
 (``Enrollment Code: XXXX'') as our preferred platform for questions
 about activities, reading tutorials, and general course questions. The
@@ -515,6 +542,8 @@ Please do not expect answers during weekends and evenings.
 \section*{School Policies}\label{school-policies}}
 \addcontentsline{toc}{section}{School Policies}
 
+\markright{School Policies}
+
 Add your standard school policies here.
 
 \bookmarksetup{startatroot}
@@ -523,16 +552,20 @@ Add your standard school policies here.
 \chapter*{Tentative schedule}\label{tentative-schedule}}
 \addcontentsline{toc}{chapter}{Tentative schedule}
 
+\markboth{Tentative schedule}{Tentative schedule}
+
 \hypertarget{week-schedule}{%
 \section*{11 week Schedule}\label{week-schedule}}
 \addcontentsline{toc}{section}{11 week Schedule}
+
+\markright{11 week Schedule}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2027}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3514}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2432}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2027}}@{}}
-\toprule()
+\toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Topic
@@ -541,8 +574,10 @@ Textbook
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Agenda
 \end{minipage} \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 Day 1 & Syllabus Day & & Syllabus Day \\
 Day 2 & Intro to R & Preface and Chapter 1 & Activity 01 \\
 Day 3 & Data Visualization & Sections 2.0-2.3 & Activity 02 \\
@@ -571,7 +606,6 @@ Day 25 & Hypothesis Testing & Chapter 12 & Activity 20 \\
 Day 26 & Review & Chapter 13 & \\
 Day 27 & Exam 3 & & \\
 & Final Project & & \\
-\bottomrule()
 \end{longtable}
 
 \bookmarksetup{startatroot}
@@ -580,6 +614,8 @@ Day 27 & Exam 3 & & \\
 \chapter*{Day 01}\label{day-01}}
 \addcontentsline{toc}{chapter}{Day 01}
 
+\markboth{Day 01}{Day 01}
+
 Welcome to class! Today is all about getting setup with the needed
 resources and reviewing the syllabus.
 
@@ -587,24 +623,34 @@ resources and reviewing the syllabus.
 \section*{Agenda}\label{agenda}}
 \addcontentsline{toc}{section}{Agenda}
 
-\begin{longtable}{ll}
+\markright{Agenda}
+
+\newlength\holdLTleft\newlength\holdLTright\setlength\holdLTleft{\LTleft}\relax\setlength\holdLTright{\LTright}\relax\setlength\LTleft{0\linewidth}
+
+\setlength\LTright{0\linewidth}
+
+\begin{longtable*}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{\dimexpr 0.15\linewidth-2\tabcolsep-1.5\arrayrulewidth}l}
 \toprule
 time & agenda \\ 
-\midrule
+\midrule\addlinespace[2.5pt]
 15 min & Syllabus and expectations \\ 
 20 min & Welcome and get students setup with all of the needed resources \\ 
 15 min & Students take survey and get to know their neighbors \\ 
 \bottomrule
-\end{longtable}
+\end{longtable*}
+\setlength\LTleft{\holdLTleft}
+\setlength\LTright{\holdLTright}
 
 \hypertarget{todays-tasks}{%
 \section*{Today's tasks}\label{todays-tasks}}
 \addcontentsline{toc}{section}{Today's tasks}
 
+\markright{Today's tasks}
+
 \begin{cols}
 
 \begin{col}{0.15\textwidth}
-\includegraphics[width=1.12em,height=1em]{./01-content_files/figure-pdf/fa-icon-a26fb0a0e540e124bcdee28d951f0027.pdf}
+\includegraphics[width=1.12em,height=1em]{01-content_files/figure-pdf/fa-icon-a26fb0a0e540e124bcdee28d951f0027.pdf}
 
 \end{col}
 
@@ -656,6 +702,8 @@ class!
 \section*{Homework}\label{homework}}
 \addcontentsline{toc}{section}{Homework}
 
+\markright{Homework}
+
 \begin{itemize}
 \item
   Read \href{https://nustat.github.io/intro-stat-data-sci/}{Preface and
@@ -672,6 +720,8 @@ class!
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
